@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="kn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠ — ಹಾಲಕೆರೆ | ಅಧಿಕೃತ ಡಿಜಿಟಲ್ ಹೆರಿಟೇಜ್ ಪೋರ್ಟಲ್</title>
+  
+  <!-- Google Fonts: Baloo Tamma 2 (Display), Tiro Kannada (Body Serif), Inter (Data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Tiro+Kannada:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS 3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            heritage: {
+              black: '#070605',
+              dark: '#0D0B08',
+              card: '#14110E',
+              elevated: '#1D1914',
+              stone: '#2A241D',
+              border: '#42372A',
+              borderLight: '#655440',
+              gold: '#D4AF37',
+              goldLight: '#F7E7B4',
+              goldDark: '#9A7B1C',
+              copper: '#A65B2E',
+              copperLight: '#C97745',
+              paper: '#F5EFE6',
+              muted: '#A89E90',
+              amberVerif: '#D97706',
+              greenVerif: '#10B981'
+            }
+          },
+          fontFamily: {
+            kannadaDisplay: ['"Baloo Tamma 2"', 'cursive', 'sans-serif'],
+            kannadaBody: ['"Tiro Kannada"', 'serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Basalt stone subtle noise and ambient glow */
+    .heritage-bg {
+      background-color: #070605;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.14) 0%, transparent 65%),
+        radial-gradient(circle at 10% 40%, rgba(166, 91, 46, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 90% 70%, rgba(212, 175, 55, 0.09) 0%, transparent 55%);
+      background-attachment: fixed;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFFDF5 0%, #F5E2A8 25%, #D4AF37 60%, #9E7D1A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .copper-gradient-text {
+      background: linear-gradient(135deg, #FFEBDD 0%, #D8824E 50%, #964719 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Precision Image Containers to eliminate stretching */
+    .image-ratio-box {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background-color: #070605;
+    }
+
+    .image-ratio-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .heritage-card:hover .image-ratio-box img {
+      transform: scale(1.03);
+    }
+
+    /* Glow cards */
+    .heritage-card {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+    }
+    .heritage-card:hover {
+      border-color: rgba(212, 175, 55, 0.7);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -10px rgba(212, 175, 55, 0.22);
+    }
+
+    /* Tab switcher display */
+    .tab-view {
+      display: none;
+      animation: fadeInView 0.38s ease-out forwards;
+    }
+    .tab-view.active {
+      display: block;
+    }
+
+    @keyframes fadeInView {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090807;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A3024;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .pulse-glow {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      animation: pulseAnim 3s infinite alternate;
+    }
+    @keyframes pulseAnim {
+      from { box-shadow: 0 0 10px rgba(212, 175, 55, 0.18); }
+      to { box-shadow: 0 0 26px rgba(212, 175, 55, 0.45); }
+    }
+  </style>
+</head>
+<body class="heritage-bg text-heritage-paper font-kannadaBody antialiased min-h-screen flex flex-col pb-20 xl:pb-0 selection:bg-heritage-gold selection:text-heritage-black">
+
+  <!-- Top Heritage Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-heritage-black via-heritage-stone to-heritage-black border-b border-heritage-border/80 py-1.5 px-3 sm:px-6 text-xs text-heritage-gold flex items-center justify-between z-50 relative">
+    <div class="flex items-center gap-2 mx-auto sm:mx-0 font-sans">
+      <span class="inline-block animate-pulse text-amber-300 font-bold font-kannadaDisplay">॥ ಓಂ ಶ್ರೀ ಗುರು ಅನ್ನದಾನೇಶ್ವರಾಯ ನಮಃ ॥</span>
+      <span class="hidden md:inline text-heritage-muted">•</span>
+      <span class="hidden md:inline text-stone-300 font-sans">Shri Annadaneshwar Samsthana Matha — Halakere | 500+ Years Heritage</span>
+    </div>
+    
+    <!-- Audio Drone Synthesizer Button & Live Status -->
+    <div class="flex items-center gap-3 text-[11px] font-sans">
+      <button id="droneAudioToggle" onclick="toggleSpiritualDrone()" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-heritage-elevated border border-heritage-gold/50 text-heritage-gold hover:bg-heritage-gold hover:text-heritage-black transition-all">
+        <i id="droneIcon" class="fa-solid fa-volume-high text-xs"></i>
+        <span id="droneText">Om Chant: Off</span>
+      </button>
+      <span class="hidden sm:inline text-emerald-400 bg-emerald-950/80 border border-emerald-700/60 px-2 py-0.5 rounded-full font-bold">174th Rathotsava 2026</span>
+      <span class="hidden lg:inline text-amber-300 bg-amber-950/70 border border-amber-800/60 px-2 py-0.5 rounded-full">27 Book-Recorded Mathas</span>
+    </div>
+  </aside>
+
+  <!-- Main Desktop and Mobile Header -->
+  <header class="sticky top-0 z-40 bg-heritage-dark/95 backdrop-blur-xl border-b border-heritage-border/90 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Emblem Logo & Title Block -->
+        <div class="flex items-center gap-3 cursor-pointer group" onclick="switchTab('home')">
+          <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-full border-2 border-heritage-gold p-0.5 bg-heritage-black shadow-lg shadow-heritage-gold/20 flex-shrink-0 overflow-hidden relative group-hover:scale-105 transition-transform">
+            <img src="assets/images/000000.jpg" alt="ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ ಹಾಲಕೆರೆ ಅಧಿಕೃತ ಲಾಂಛನ" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/120x120/1a130b/d4af37?text=Matha+Logo';">
+          </div>
+          <div>
+            <span class="block text-[10px] sm:text-xs tracking-widest text-heritage-gold uppercase font-sans font-bold">
+              ESTD. 500+ YEARS AGO • HALAKERE
+            </span>
+            <h1 class="text-base sm:text-xl font-extrabold font-kannadaDisplay gold-gradient-text leading-tight">
+              ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠ
+            </h1>
+            <p class="text-[11px] text-heritage-muted font-sans hidden sm:block">
+              Halakere, Taluk: Gajendragad / Ron, District: Gadag, Karnataka
+            </p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Items -->
+        <nav class="hidden xl:flex items-center space-x-1 text-sm font-kannadaDisplay font-semibold">
+          <button onclick="switchTab('home')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-gold border-b-2 border-heritage-gold" data-target="home">ಮುಖಪುಟ</button>
+          <button onclick="switchTab('history')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="history">ಇತಿಹಾಸ & ಪವಾಡ</button>
+          <button onclick="switchTab('parampara')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="parampara">ಗುರು ಪರಂಪರೆ</button>
+          <button onclick="switchTab('shivayog')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="shivayog">ಶಿವಯೋಗ ಮಂದಿರ</button>
+          <button onclick="switchTab('branches')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="branches">27 ಶಾಖಾ ಮಠಗಳು</button>
+          <button onclick="switchTab('education')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="education">ಶಿಕ್ಷಣ</button>
+          <button onclick="switchTab('sannidhi')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="sannidhi">ಸನ್ನಿಧಿಗಳು</button>
+          <button onclick="switchTab('dasoha')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="dasoha">ಅಕ್ಷರ-ಅನ್ನ ದಾಸೋಹ</button>
+          <button onclick="switchTab('rathotsava')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="rathotsava">ರಥೋತ್ಸವ</button>
+          <button onclick="switchTab('archive')" class="nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold" data-target="archive">ಆರ್ಕೈವ್</button>
+        </nav>
+
+        <!-- Right Quick Action & Mobile Drawer Hamburger -->
+        <div class="flex items-center gap-3">
+          <button onclick="switchTab('visit')" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-heritage-copper/30 border border-heritage-copper/70 text-amber-200 text-xs font-kannadaDisplay hover:bg-heritage-copper/50 transition-all shadow">
+            <i class="fa-solid fa-location-dot text-heritage-gold"></i>
+            <span>ದರ್ಶನ & ಸೇವೆ</span>
+          </button>
+          
+          <button onclick="toggleMobileNavDrawer()" class="xl:hidden p-2.5 rounded-xl bg-heritage-card border border-heritage-border text-heritage-gold hover:bg-heritage-stone focus:outline-none" aria-label="Open Navigation Menu">
+            <i class="fa-solid fa-bars-staggered text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay Menu -->
+    <div id="mobileDrawer" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md xl:hidden transition-all">
+      <div class="fixed right-0 top-0 bottom-0 w-4/5 max-w-sm bg-heritage-dark border-l border-heritage-border p-6 flex flex-col justify-between overflow-y-auto">
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-heritage-border">
+            <div class="flex items-center gap-2">
+              <img src="assets/images/000000.jpg" alt="Logo" class="w-8 h-8 rounded-full border border-heritage-gold" onerror="this.onerror=null; this.src='https://placehold.co/80x80/1a130b/d4af37?text=Logo';">
+              <span class="text-sm font-bold font-kannadaDisplay text-heritage-gold">ಹಾಲಕೆರೆ ಮಹಾಸಂಸ್ಥಾನ</span>
+            </div>
+            <button onclick="toggleMobileNavDrawer()" class="p-2 text-heritage-muted hover:text-heritage-paper">
+              <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+          </div>
+          
+          <div class="space-y-1.5 py-5 font-kannadaDisplay text-base">
+            <button onclick="switchTab('home'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-gold flex items-center justify-between">
+              <span>ಮುಖಪುಟ (Home)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('history'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಮಠದ ಇತಿಹಾಸ & ಪವಾಡಗಳು</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('parampara'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಗುರು ಪರಂಪರೆ (Guru Lineage)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('shivayog'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಶಿವಯೋಗ ಮಂದಿರ & ಹಾಲಕೆರೆ</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('branches'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>27 ಶಾಖಾ ಮಠಗಳು (Branches)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('education'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು (Education)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('sannidhi'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಪವಿತ್ರ ಸನ್ನಿಧಿಗಳು (Sanctuaries)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('dasoha'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಅಕ್ಷರ & ಅನ್ನ ದಾಸೋಹ</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('rathotsava'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>174th ಮಹಾ ರಥೋತ್ಸವ</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('archive'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl hover:bg-heritage-card text-heritage-paper/90 flex items-center justify-between">
+              <span>ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್ (Digital Archive)</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>
+            </button>
+            <button onclick="switchTab('visit'); toggleMobileNavDrawer();" class="w-full text-left px-3 py-2.5 rounded-xl bg-heritage-copper/30 border border-heritage-copper/70 text-amber-300 flex items-center justify-between">
+              <span>ಮಠಕ್ಕೆ ಭೇಟಿ ನೀಡಿ & ಸೇವೆ</span> <i class="fa-solid fa-map-pin text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-heritage-border text-xs text-heritage-muted font-sans text-center">
+          Shri Annadaneshwar Matha • Halakere
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- ============================================================== -->
+    <!-- SECTION 1: ಮುಖಪುಟ (HOME SHOWCASE) -->
+    <!-- ============================================================== -->
+    <section id="view-home" class="tab-view active">
+      
+      <!-- Hero Top Showcase -->
+      <div class="relative overflow-hidden py-8 sm:py-14 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info & Welcome Column -->
+            <div class="lg:col-span-7 text-center lg:text-left space-y-4">
+              
+              <!-- Seva Samiti Official Badge with assets/images/000000.jpg -->
+              <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-heritage-gold/50 bg-heritage-card/90 backdrop-blur shadow-sm">
+                <img src="assets/images/000000.jpg" alt="Shri Math Halakere Seva Samiti" class="w-6 h-6 rounded-full object-cover border border-heritage-gold" onerror="this.onerror=null; this.src='https://placehold.co/50x50/14110E/d4af37?text=S';">
+                <span class="text-xs font-sans font-semibold text-amber-300 tracking-wide">
+                  SHRI MATH HALAKERE SEVA SAMITI • 500+ YEARS HERITAGE
+                </span>
+              </div>
+
+              <!-- Main Hero Heading with English Numerals -->
+              <h1 class="text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold font-kannadaDisplay leading-tight">
+                <span class="gold-gradient-text block">ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠ</span>
+                <span class="text-xl sm:text-3xl md:text-4xl text-stone-200 block font-semibold mt-1">ಹಾಲಕೆರೆ — ತ್ರಿವಿಧ ದಾಸೋಹದ ಪಾವನ ನೆಲೆವೀಡು</span>
+              </h1>
+
+              <!-- Mahavakya -->
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-heritage-card border-l-4 border-heritage-gold border-r border-t border-b border-heritage-border/70 text-sm sm:text-base text-heritage-goldLight italic">
+                “ಅನ್ನವೇ ಪರಬ್ರಹ್ಮ… ಜ್ಞಾನವೇ ಬೆಳಕು… ಕಾಯಕ-ದಾಸೋಹವೇ ಮುಕ್ತಿಯ ಸೋಪಾನ.”
+              </div>
+
+              <p class="text-sm sm:text-base text-heritage-muted font-kannadaBody leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                ಕಲ್ಯಾಣ ಕ್ರಾಂತಿಯ ನಂತರ ನಾಡಿನಲ್ಲಿ ಶರಣ ತತ್ವ ಮತ್ತು ಶಿವಾನುಭವವನ್ನು ಪುನರುಜ್ಜೀವನಗೊಳಿಸಲು ಇಳಕಲ್ ಚಿತ್ತರಗಿಯಿಂದ ಸಂಚರಿಸಿ ಹಾಲಕೆರೆ ತಪೋಭೂಮಿಯಲ್ಲಿ ಅಖಂಡ ತಪಸ್ಸುಗೈದ ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರ ಪಾವನ ಕ್ಷೇತ್ರ. ಪುಸ್ತಕದ ದಾಖಲೆಗಳಲ್ಲಿರುವ 27 ಶಾಖಾ ಮಠಗಳ ಜಾಲ, ನರೇಗಲ್ ಕಿವುಡ-ಮೂಕರ ಉಚಿತ ಶಾಲೆ, ಮಹಿಳೆಯರೇ ಎಳೆಯುವ 174th ಬೆಳ್ಳಿ ರಥೋತ್ಸವ ಹಾಗೂ ಶಿವಯೋಗ ಮಂದಿರದೊಂದಿಗೆ ಅವಿನಾಭಾವ ಸಂಬಂಧ ಹೊಂದಿರುವ ಧರ್ಮಪೀಠ.
+              </p>
+
+              <!-- Hero Call to Action Buttons -->
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+                <button onclick="switchTab('history')" class="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-heritage-gold to-heritage-copper text-heritage-black font-kannadaDisplay font-bold text-sm sm:text-base shadow-lg hover:shadow-heritage-gold/25 hover:scale-[1.02] transition-all flex items-center gap-2">
+                  <span>500+ ವರ್ಷಗಳ ಇತಿಹಾಸ ತಿಳಿಯಿರಿ</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+                <button onclick="switchTab('parampara')" class="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-heritage-card border border-heritage-gold/50 text-heritage-gold font-kannadaDisplay font-bold text-sm sm:text-base hover:bg-heritage-elevated transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-person-praying text-xs"></i>
+                  <span>ಗುರು ಪರಂಪರೆ ದರ್ಶನ</span>
+                </button>
+                <button onclick="switchTab('branches')" class="px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-heritage-stone border border-heritage-border text-stone-200 font-sans font-semibold text-xs sm:text-sm hover:border-heritage-gold transition-all">
+                  27 Branches Directory
+                </button>
+              </div>
+
+              <!-- Quick Metrics in English Numbers -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-left font-sans">
+                <div class="bg-heritage-card p-3 rounded-xl border border-heritage-border">
+                  <div class="text-xl sm:text-2xl font-extrabold text-heritage-gold">500+</div>
+                  <div class="text-[11px] text-heritage-muted">Years of Heritage</div>
+                </div>
+                <div class="bg-heritage-card p-3 rounded-xl border border-heritage-border">
+                  <div class="text-xl sm:text-2xl font-extrabold text-heritage-gold">27</div>
+                  <div class="text-[11px] text-heritage-muted">Book-Recorded Mathas</div>
+                </div>
+                <div class="bg-heritage-card p-3 rounded-xl border border-heritage-border">
+                  <div class="text-xl sm:text-2xl font-extrabold text-heritage-gold">174th</div>
+                  <div class="text-[11px] text-heritage-muted">Annual Rathotsava</div>
+                </div>
+                <div class="bg-heritage-card p-3 rounded-xl border border-heritage-border">
+                  <div class="text-xl sm:text-2xl font-extrabold text-emerald-400">100%</div>
+                  <div class="text-[11px] text-heritage-muted">Free Anna Dasoha</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Visual Column: Refined Proportionate Image Cards -->
+            <div class="lg:col-span-5 w-full space-y-3.5">
+              
+              <!-- Main Guruji Combo Portrait (assets/images/guruji.jpg) -->
+              <div class="heritage-card bg-heritage-card rounded-2xl border-2 border-heritage-gold/60 p-2 shadow-2xl overflow-hidden pulse-glow">
+                <!-- Proportional aspect-ratio container preserving faces without distortion -->
+                <div class="image-ratio-box rounded-xl h-[280px] sm:h-[340px] md:h-[360px]">
+                  <img src="assets/images/guruji.jpg" alt="ಪೂಜ್ಯ ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು & ಪ್ರಸ್ತುತ ಪೀಠಾಧೀಶರಾದ ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು" class="w-full h-full object-cover object-[center_18%]" onerror="this.onerror=null; this.src='assets/images/2222.jpg';">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/25 to-transparent"></div>
+                  
+                  <div class="absolute bottom-2.5 left-2.5 right-2.5 p-3 bg-heritage-dark/90 backdrop-blur rounded-xl border border-heritage-border/90">
+                    <span class="text-[10px] uppercase font-sans tracking-wider text-amber-400 font-bold">ಪವಿತ್ರ ಗುರು ಸಂಗಮ</span>
+                    <h3 class="text-xs sm:text-sm font-bold font-kannadaDisplay text-heritage-paper leading-snug">
+                      ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಶ್ರೀಗಳು & ಹಾಲಿ ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಶ್ರೀಗಳು
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Two Symmetric Secondary Heritage Cards -->
+              <div class="grid grid-cols-2 gap-3">
+                
+                <!-- 1970 Rare Siddaganga Swamiji Photo (assets/images/hero.jpg) -->
+                <div class="heritage-card bg-heritage-card p-2 rounded-xl border border-heritage-border hover:border-heritage-gold transition-all cursor-pointer" onclick="openArchiveInspector('photo_siddaganga')">
+                  <div class="image-ratio-box h-[125px] sm:h-[145px] rounded-lg">
+                    <img src="assets/images/hero.jpg" alt="1970 Rare Photograph of Siddaganga Swamiji with Halakere Swamiji" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x200/14110E/d4af37?text=1970+Photo';">
+                    <span class="absolute top-1.5 right-1.5 bg-black/85 text-[9px] font-sans px-1.5 py-0.5 rounded text-amber-300 border border-amber-600/40">1970</span>
+                  </div>
+                  <div class="pt-2 px-1">
+                    <h4 class="text-xs font-bold font-kannadaDisplay text-stone-200 truncate">ಸಿದ್ಧಗಂಗಾ & ಹಾಲಕೆರೆ ಗುರುಗಳು</h4>
+                    <p class="text-[10px] text-heritage-muted font-sans">1970 Historic Samvada</p>
+                  </div>
+                </div>
+
+                <!-- Halakere Matha (assets/images/halakere mata.avif) -->
+                <div class="heritage-card bg-heritage-card p-2 rounded-xl border border-heritage-border hover:border-heritage-gold transition-all cursor-pointer" onclick="openSannidhiDetail('kartru_gadduge')">
+                  <div class="image-ratio-box aspect-square rounded-lg">
+                    <img src="assets/images/halakere%20mata.avif" alt="ಹಾಲಕೆರೆಯ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠದ ಪ್ರವೇಶದ್ವಾರ" class="w-full h-full object-contain object-center" onerror="this.onerror=null; this.src='assets/images/matha.jpg.jpg';">
+                    <span class="absolute top-1.5 right-1.5 bg-black/85 text-[9px] font-sans px-1.5 py-0.5 rounded text-emerald-400 border border-emerald-600/40">Halakere HQ</span>
+                  </div>
+                  <div class="pt-2 px-1">
+                    <h4 class="text-xs font-bold font-kannadaDisplay text-stone-200 truncate">ಹಾಲಕೆರೆ ಮಠದ ಪ್ರವೇಶದ್ವಾರ</h4>
+                    <p class="text-[10px] text-heritage-muted font-sans">Shri Annadaneshwar Matha • Halakere</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Feature Highlight Row: Shivayog Mandir, Naregal School, Rathotsava -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 border-t border-heritage-border/60">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">PILLARS OF HALAKERE</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold font-kannadaDisplay text-heritage-paper mt-1">
+            ಶ್ರೀಮಠದ ಮಹೋನ್ನತ ವೈಭವಗಳು
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Shivayog Mandira Card -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 cursor-pointer" onclick="switchTab('shivayog')">
+            <div class="w-12 h-12 rounded-xl bg-heritage-gold/20 border border-heritage-gold/40 flex items-center justify-center text-heritage-gold text-2xl mb-4">
+              <i class="fa-solid fa-om"></i>
+            </div>
+            <span class="text-[11px] font-sans font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800">SACRED CONNECTION</span>
+            <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-paper mt-2 mb-2">ಶಿವಯೋಗ ಮಂದಿರ & ಹಾಲಕೆರೆ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಶ್ರೀಗಳ ಸುದೀರ್ಘ ಅಧ್ಯಕ್ಷತೆ, ನೂರಾರು ವಿರಕ್ತ ಪೀಠಾಧಿಪತಿಗಳ ತರಬೇತಿ ಹಾಗೂ ಏಷ್ಯಾದ ಅತಿ ಎತ್ತರದ ರಥ ನಿರ್ಮಾಣದ ಇತಿಹಾಸ.
+            </p>
+            <div class="text-xs text-heritage-gold font-bold flex items-center gap-1.5 font-sans">
+              <span>Explore Shivayog Mandira Chapter</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+
+          <!-- Naregal Deaf & Dumb School Card -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 cursor-pointer" onclick="switchTab('dasoha')">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl mb-4">
+              <i class="fa-solid fa-hands-asl-interpreting"></i>
+            </div>
+            <span class="text-[11px] font-sans font-bold text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">EDUCATION DASOHA</span>
+            <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-paper mt-2 mb-2">ನರೇಗಲ್ ಕಿವುಡ-ಮೂಕರ ಉಚಿತ ಶಾಲೆ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಉತ್ತರ ಕರ್ನಾಟಕದ ಗ್ರಾಮೀಣ ದಿವ್ಯಾಂಗ ಮಕ್ಕಳಿಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ಶಿಕ್ಷಣ, ಊಟ, ವಸತಿ ಮತ್ತು ಸನ್ನೆ ಭಾಷಾ ತರಬೇತಿ ನೀಡುವ ಆದರ್ಶ ಶಾಲೆ.
+            </p>
+            <div class="text-xs text-heritage-gold font-bold flex items-center gap-1.5 font-sans">
+              <span>View Free Residential School Details</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+
+          <!-- 27 Book-Recorded Mathas -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 cursor-pointer" onclick="switchTab('branches')">
+            <div class="w-12 h-12 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-300 text-2xl mb-4">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <span class="text-[11px] font-sans font-bold text-amber-300 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800">27 MATHAS NETWORK</span>
+            <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-paper mt-2 mb-2">27 ಶಾಖಾ ಮಠಗಳು & ಬೇಲೂರು</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಹಾಲಕೆರೆ ಕೇಂದ್ರ ಮಠ ಸೇರಿದಂತೆ ಬೇಲೂರು, ಕೋಡಿಕೊಪ್ಪ, ಇಟಗಿ, ಗಜೇಂದ್ರಗಡ, ಗದಗ, ದಾವಣಗೇರಿ ಮುಂತಾದ ಪುಸ್ತಕದಲ್ಲಿ ದಾಖಲಾದ 27 ಸ್ಥಳಗಳ ವಿವರ.
+            </p>
+            <div class="text-xs text-heritage-gold font-bold flex items-center gap-1.5 font-sans">
+              <span>Browse 27 Branches Directory</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 2: ಮಠದ ಇತಿಹಾಸ & ಪವಾಡಗಳು (HISTORY & MIRACLES) -->
+    <!-- ============================================================== -->
+    <section id="view-history" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="border-b border-heritage-border pb-6 mb-8 text-center sm:text-left">
+          <span class="text-xs text-heritage-gold font-sans font-bold tracking-widest uppercase">500+ YEARS SACRED CHRONICLE</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠದ ಉಗಮ & ಪವಾಡ ಮಹಿಮೆಗಳು
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base max-w-3xl mt-2 font-kannadaBody">
+            ಇಳಕಲ್ ಚಿತ್ತರಗಿಯ ತಪಸ್ಸಿನಿಂದ ಹಾಲಕೆರೆಯ ಗದ್ದುಗೆಯವರೆಗೆ, ಶತಮಾನಗಳಿಂದ ಹರಿದುಬಂದಿರುವ ಶರಣ ತತ್ವ ಮತ್ತು ಪವಾಡಗಳ ಸಮಗ್ರ ದಾಖಲೆ.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- History Chapters -->
+          <div class="lg:col-span-8 space-y-6">
+            
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center gap-3 text-heritage-gold mb-3 font-sans">
+                <span class="w-8 h-8 rounded-full bg-heritage-gold/20 flex items-center justify-center font-bold text-sm">1</span>
+                <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay">ಚಿತ್ತರಗಿ ಇಳಕಲ್‌ನ ತ್ರಿವಳಿ ಯೋಗಿಗಳ ದಿವ್ಯ ಸಂಕಲ್ಪ</h3>
+              </div>
+              <p class="text-heritage-paper/90 text-sm sm:text-base leading-relaxed font-kannadaBody mb-3">
+                ಸುಮಾರು 16ನೇ ಶತಮಾನದಲ್ಲಿ ಕಲ್ಯಾಣದ ಬಸವಣ್ಣನವರ ತತ್ವಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಮೂವರು ಮಹಾತಪಸ್ವಿಗಳು ಒಟ್ಟಾಗಿ ಅನುಷ್ಠಾನ ಕೈಗೊಂಡರು: **ಶ್ರೀ ಗುರು ಮಹಾಂತ ಮಹಾಸ್ವಾಮಿಗಳು**, **ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳು**, ಹಾಗೂ **ಶ್ರೀ ಕೊಟ್ಟೂರೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳು**.
+              </p>
+              <p class="text-heritage-muted text-xs sm:text-sm font-kannadaBody leading-relaxed">
+                ಇಳಕಲ್ ಸಮೀಪದ ಚಿತ್ತರಗಿ ಸಂಸ್ಥಾನ ಮಠದಲ್ಲಿ ಮೂವರೂ ಅಖಂಡ ಇಷ್ಟಲಿಂಗ ಯೋಗದಲ್ಲಿ ಮುಳುಗಿದರು. ತಪಸ್ಸಿನ ನಂತರ ಲೋಕಕಲ್ಯಾಣಕ್ಕಾಗಿ ಶ್ರೀ ಮಹಾಂತ ಸ್ವಾಮಿಗಳು ಚಿತ್ತರಗಿಯಲ್ಲೂ, ಶ್ರೀ ಕೊಟ್ಟೂರೇಶ್ವರರು ಕೊಟ್ಟೂರು-ತುಂಗಭದ್ರಾ ತೀರದಲ್ಲೂ ನೆಲೆನಿಂತರೆ, ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸ್ವಾಮಿಗಳು ನರೇಗಲ್ಲು ಮಾರ್ಗವಾಗಿ ಹಾಲಕೆರೆ ತಪೋಭೂಮಿಗೆ ಆಗಮಿಸಿದರು.
+              </p>
+            </div>
+
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center gap-3 text-heritage-gold mb-3 font-sans">
+                <span class="w-8 h-8 rounded-full bg-heritage-gold/20 flex items-center justify-center font-bold text-sm">2</span>
+                <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay">ಹಾಲಕೆರೆ ಆಗಮನ & ಕ್ರೂರ ಮೃಗಗಳ ಶಾಂತತೆ</h3>
+              </div>
+              <p class="text-heritage-paper/90 text-sm sm:text-base leading-relaxed font-kannadaBody mb-3">
+                ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸ್ವಾಮಿಗಳು ಹಾಲಕೆರೆಯ ಗುಡ್ಡಗಾಡು ಪ್ರದೇಶಕ್ಕೆ ಆಗಮಿಸಿ ಒಂದು ಹೆಮ್ಮರದ ನೆರಳಿನಲ್ಲಿ ತಪಸ್ಸಿಗೆ ಕುಳಿತರು. ಅವರ ತಪಃಶಕ್ತಿಯ ಪ್ರಭಾವದಿಂದ ಕಾಡಿನ ಕ್ರೂರ ಹುಲಿಗಳು ಮತ್ತು ಸಾಧು ಪ್ರಾಣಿಗಳು ಒಂದೇ ಜಾಗದಲ್ಲಿ ಶಾಂತವಾಗಿ ನೀರು ಕುಡಿದವು ಎಂಬ ನಂಬಿಕೆ ಭಕ್ತರಲ್ಲಿದೆ.
+              </p>
+              <p class="text-heritage-muted text-xs sm:text-sm font-kannadaBody leading-relaxed">
+                ಹಾಲಕೆರೆಯ ಗ್ರಾಮಸ್ಥರು ಈ ಮಹಾಯೋಗಿಯ ದೈವಿಕ ತೇಜಸ್ಸನ್ನು ಕಂಡು ಶರಣಾದರು. ಗ್ರಾಮದ ಪ್ರಮುಖರು ವಿನಂತಿಸಿಕೊಂಡ ಮೇರೆಗೆ ಶ್ರೀಗಳು ಇದೇ ಪವಿತ್ರ ಕ್ಷೇತ್ರದಲ್ಲಿ ಶಾಶ್ವತವಾಗಿ ನೆಲೆಸಿ ನಿತ್ಯ ಅನ್ನದಾಸೋಹದ ಜ್ಯೋತಿಯನ್ನು ಬೆಳಗಿಸಿದರು.
+              </p>
+            </div>
+
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center gap-3 text-heritage-gold mb-3 font-sans">
+                <span class="w-8 h-8 rounded-full bg-heritage-gold/20 flex items-center justify-center font-bold text-sm">3</span>
+                <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay">ಅಖಂಡ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ಪವಾಡ & ಬರಿದಾಗದ ದಾಸೋಹ</h3>
+              </div>
+              <p class="text-heritage-paper/90 text-sm sm:text-base leading-relaxed font-kannadaBody mb-3">
+                ಮಠಕ್ಕೆ ಬಂದ ಯಾರೊಬ್ಬರೂ ಹಸಿದ ಹೊಟ್ಟೆಯಲ್ಲಿ ಮರಳಬಾರದು ಎಂಬುದು ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರ ಕಟ್ಟುನಿಟ್ಟಿನ ಆದೇಶವಾಗಿತ್ತು. ಭೀಕರ ಬರಗಾಲದ ಸಂದರ್ಭದಲ್ಲಿ ದಾಸೋಹ ಪಾತ್ರೆಯಲ್ಲಿ ಧಾನ್ಯ ಮುಗಿದಾಗ ಶ್ರೀಗಳು ತಮ್ಮ ತಪೋಬಲದಿಂದ ಪಾತ್ರೆಯನ್ನು ಮುಟ್ಟಿ ಆಶೀರ್ವದಿಸಿದಾಗ ಅನ್ನ-ಸಾಂಬಾರು ಎಂದಿಗೂ ಬರಿದಾಗದೆ ಸಾವಿರಾರು ಜನರಿಗೆ ಸಾಕಾಗುವಷ್ಟು ಉಕ್ಕಿ ಹರಿಯಿತು ಎಂಬುದು ಹಾಲಕೆರೆಯ ಅಪ್ರತಿಮ ಪವಾಡ.
+              </p>
+              <div class="bg-amber-950/40 border border-amber-800/60 p-4 rounded-xl text-xs text-amber-200">
+                <strong class="text-amber-400 block mb-1">ನಿಸ್ಸಂತಾನ ದಂಪತಿಗಳಿಗೆ ಸಂತಾನ ಪ್ರಾಪ್ತಿ:</strong>
+                ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರ ಗದ್ದುಗೆಗೆ ಬಂದು ತೊಟ್ಟಿಲು ಕಟ್ಟಿ ಹರಕೆ ಹೊತ್ತ ಭಕ್ತರಿಗೆ ಸಂತಾನ ಪ್ರಾಪ್ತಿಯಾಗುವ ಪವಾಡ ಇಂದಿಗೂ ನಿರಂತರವಾಗಿ ಜರುಗುತ್ತಿದೆ.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Photo and Entrance -->
+          <div class="lg:col-span-4 space-y-6">
+            
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-4">
+              <div class="image-ratio-box aspect-square rounded-xl mb-3 border border-heritage-border">
+                <img src="assets/images/halakere%20mata.avif" alt="ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನ ಮಠದ ಪ್ರವೇಶದ್ವಾರ" class="w-full h-full object-contain object-center" onerror="this.onerror=null; this.src='assets/images/matha.jpg.jpg';">
+              </div>
+              <span class="text-[10px] font-sans text-amber-400 bg-amber-950/80 px-2 py-0.5 rounded border border-amber-800">SACRED SANCTUM</span>
+              <h4 class="text-base font-bold font-kannadaDisplay text-heritage-paper mt-1">ಹಾಲಕೆರೆ ಮಠದ ಮಹಾದ್ವಾರ</h4>
+              <p class="text-xs text-heritage-muted font-kannadaBody mt-1">
+                ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನ ಮಠ ಹಾಲಕೆರೆಯ ಪುರಾತನ ದ್ವಾರಪಾಲಕ ಮತ್ತು ಲಿಂಗ ಪ್ರತಿಷ್ಠಾಪನೆಯ ದಿವ್ಯ ಚಿತ್ರಕಲೆ.
+              </p>
+            </div>
+
+            <div class="bg-heritage-elevated border border-heritage-border rounded-2xl p-5">
+              <h4 class="text-sm font-bold font-kannadaDisplay text-heritage-gold mb-2">ಐತಿಹಾಸಿಕ ಅಂಶಗಳು (Summary):</h4>
+              <ul class="text-xs text-heritage-muted space-y-2 font-kannadaBody">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> 500+ ವರ್ಷಗಳ ಅಖಂಡ ತಪೋ ಪರಂಪರೆ</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> ಇಳಕಲ್ ಚಿತ್ತರಗಿ ಮತ್ತು ಕೊಟ್ಟೂರು ಮಠಗಳೊಂದಿಗೆ ತ್ರಿವಳಿ ಸಂಬಂಧ</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> ಜಾತಿ-ಮತ ರಹಿತ ತ್ರಿವಿಧ ದಾಸೋಹ ಧರ್ಮ</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> ಜೀವಂತ ಸಮಾಧಿ ಹೊಂದಿದ ಕರ್ತೃ ಶ್ರೀಗಳ ಮಹಾಗದ್ದುಗೆ</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 3: ಗುರು ಪರಂಪರೆ (GURU LINEAGE) -->
+    <!-- ============================================================== -->
+    <section id="view-parampara" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">SACRED GURU PARAMPARA</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಶ್ರೀ ಸಂಸ್ಥಾನ ಮಠದ ಭವ್ಯ ಗುರು ಪರಂಪರೆ
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ಪುಸ್ತಕದ ದಾಖಲೆಗಳ ಪ್ರಕಾರ ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರಿಂದ ಹಾಲಿ ಪೀಠಾಧಿಪತಿಗಳವರೆಗಿನ 13 ಗುರುಗಳ ಪರಂಪರೆ.
+          </p>
+        </div>
+
+        <div id="guruRoster" class="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
+
+        <!-- Earlier narrative cards retained for reference; the book-record roster above is canonical. -->
+        <div class="hidden">
+          
+          <!-- Guru 13: Current Pontiff (assets/images/2222.jpg) -->
+          <div class="bg-gradient-to-r from-heritage-card via-heritage-elevated to-heritage-card border-2 border-heritage-gold rounded-3xl p-6 sm:p-8 shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div class="md:col-span-4 text-center">
+                <div class="image-ratio-box w-48 h-60 sm:w-56 sm:h-68 mx-auto rounded-2xl border-2 border-heritage-gold shadow-lg">
+                  <img src="assets/images/2222.jpg" alt="ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x400/14110E/d4af37?text=Current+Guruji';">
+                </div>
+                <span class="inline-block mt-3 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs font-sans font-bold">
+                  2021 — PRESENT (ಹಾಲಿ ಪೀಠಾಧೀಶರು)
+                </span>
+              </div>
+              <div class="md:col-span-8 space-y-3">
+                <span class="text-xs font-sans font-bold text-amber-400 bg-amber-950/70 px-2.5 py-0.5 rounded border border-amber-800">13TH PEETHADHIPATHI</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                  ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು
+                </h3>
+                <p class="text-xs sm:text-sm text-amber-300 font-sans">
+                  Present Pontiff • Shri Annadaneshwar Samsthana Matha Halakere & Hampi Hemakoota Peetha
+                </p>
+                <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                  ಹಾಲಕೆರೆ ಮಹಾಸಂಸ್ಥಾನ ಹಾಗೂ ಹಂಪಿ ಹೇಮಕೂಟ ಶೂನ್ಯಸಿಂಹಾಸನ ಪೀಠದ ಪ್ರಸ್ತುತ ಸಾರಥಿಗಳು. ಸಂಸ್ಕೃತ, ವೇದಾಂತ, ಯೋಗ ಮತ್ತು ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಪಾರಂಗತರಾಗಿದ್ದು, ಆಧುನಿಕ ಯುವಜನರಲ್ಲಿ ಧಾರ್ಮಿಕ ಜಾಗೃತಿ ಮೂಡಿಸುತ್ತಿರುವ ಯುವ ತಪಸ್ವಿಗಳು. ನರೇಗಲ್ ಕಿವುಡ-ಮೂಕರ ಶಾಲೆ, ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು ಹಾಗೂ ಡಿಜಿಟಲ್ ಹೆರಿಟೇಜ್ ಸಂರಕ್ಷಣೆಯನ್ನು ಶ್ರದ್ಧೆಯಿಂದ ಮುನ್ನಡೆಸುತ್ತಿದ್ದಾರೆ.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 12: Lingaikya Dr. Abhinava Sanganabasava Swamiji (assets/images/2233.jpg) -->
+          <div class="bg-heritage-card border border-heritage-border rounded-3xl p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div class="md:col-span-4 text-center">
+                <div class="image-ratio-box w-48 h-60 sm:w-56 sm:h-68 mx-auto rounded-2xl border border-heritage-border shadow-lg">
+                  <img src="assets/images/2233.jpg" alt="ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x400/14110E/d4af37?text=Sanganabasava+Swamiji';">
+                </div>
+                <span class="inline-block mt-3 px-3 py-1 rounded-full bg-heritage-stone border border-heritage-border text-stone-300 text-xs font-sans font-bold">
+                  1987 — 2021 (ಲಿಂಗೈಕ್ಯ)
+                </span>
+              </div>
+              <div class="md:col-span-8 space-y-3">
+                <span class="text-xs font-sans font-bold text-emerald-400 bg-emerald-950/70 px-2.5 py-0.5 rounded border border-emerald-800">12TH PEETHADHIPATHI • ತ್ರಿವಿಧ ದಾಸೋಹಿ</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-gold">
+                  ಲಿಂ. ಪೂಜ್ಯ ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-300 font-sans">
+                  Former President of Shivayog Mandira & Architect of Modern Halakere Matha
+                </p>
+                <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                  ಆಧುನಿಕ ಹಾಲಕೆರೆಯ ಯುಗಪುರುಷರು. ಶಿವಯೋಗ ಮಂದಿರ ಸಂಸ್ಥೆಯ ಅಧ್ಯಕ್ಷರಾಗಿ ನೂರಾರು ವಿರಕ್ತ ಸ್ವಾಮೀಜಿಗಳಿಗೆ ತರಬೇತಿ ನೀಡಿದವರು. ನರೇಗಲ್‌ನಲ್ಲಿ ಕಿವುಡ-ಮೂಕರ ಉಚಿತ ಶಾಲೆ ಸ್ಥಾಪಿಸಿದರು. ಮಹಿಳೆಯರೇ ಎಳೆಯುವ ವಿಶ್ವದಾಖಲೆಯ ಬೆಳ್ಳಿರಥೋತ್ಸವವನ್ನು ಆರಂಭಿಸಿ ಲಿಂಗ ಸಮಾನತೆಗೆ ನಾಂದಿ ಹಾಡಿದರು. ಶಿವಯೋಗ ಮಂದಿರದಲ್ಲಿ ಏಷ್ಯಾದ ಅತಿ ಎತ್ತರದ ರಥ ನಿರ್ಮಿಸಿದ ಕೀರ್ತಿ ಇವರಿಗೆ ಸಲ್ಲುತ್ತದೆ.
+                </p>
+                <button onclick="switchTab('shivayog')" class="text-xs font-sans font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-2">
+                  <span>Read full Shivayog Mandira and Swamiji Legacy</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 10: Shri M.Ni.Pra. Annadana Mahaswamiji (Dual Symmetric Portraits) -->
+          <div class="bg-heritage-card border border-heritage-border rounded-3xl p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div class="md:col-span-4 text-center">
+                <div class="flex justify-center gap-3">
+                  <div class="image-ratio-box w-28 h-40 sm:w-34 sm:h-46 rounded-xl border border-heritage-border">
+                    <img src="assets/images/rathostav.jpg" alt="ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳು" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/150x200/14110E/d4af37?text=Swamiji+1';">
+                  </div>
+                  <div class="image-ratio-box w-28 h-40 sm:w-34 sm:h-46 rounded-xl border border-heritage-border">
+                    <img src="assets/images/11111.jpg" alt="ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳು ಭಾವಚಿತ್ರ" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/150x200/14110E/d4af37?text=Swamiji+2';">
+                  </div>
+                </div>
+                <span class="inline-block mt-3 px-3 py-1 rounded-full bg-heritage-stone border border-heritage-border text-stone-300 text-xs font-sans font-bold">
+                  EARLY 20TH CENTURY (ಕಟ್ಟಿಗೆ ಮಠದ ಅಜ್ಜಾವ್ರು)
+                </span>
+              </div>
+              <div class="md:col-span-8 space-y-3">
+                <span class="text-xs font-sans font-bold text-amber-300 bg-amber-950/70 px-2.5 py-0.5 rounded border border-amber-800">10TH PEETHADHIPATHI</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-goldLight">
+                  ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳು, ಹಾಲಕೆರೆ
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-300 font-sans">
+                  The Architect of 28 Branch Mathas Expansion & Temple Administration
+                </p>
+                <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                  ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಆಸ್ತಿಪಾಸ್ತಿಗಳು, ಶಾಖಾ ಮಠಗಳ ಜಾಲ ಹಾಗೂ ವಾರ್ಷಿಕ ರಥೋತ್ಸವವನ್ನು ಅತ್ಯಂತ ಶಿಸ್ತಿನಿಂದ ಸಂಘಟಿಸಿದ ಹಿರಿಯ ಪೂಜ್ಯರು. ಉತ್ತರ ಕರ್ನಾಟಕ ಮತ್ತು ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಗಡಿ ಭಾಗಗಳಾದ ಬೇಲೂರು, ಬಾದಾಮಿ, ಬಾಗಲಕೋಟೆ, ಕೊಪ್ಪಳ ಮತ್ತು ಬಳ್ಳಾರಿ ಸೀಮೆಗಳಲ್ಲಿ ಮಠದ ಶಾಖೆಗಳನ್ನು ವಿಸ್ತರಿಸಿದರು.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 6: Hiriyanna Shivayogi (Gaddada Ajjanavaru) -->
+          <div class="bg-heritage-card border border-heritage-border rounded-3xl p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div class="md:col-span-4 text-center">
+                <div class="image-ratio-box w-44 h-56 sm:w-52 sm:h-64 mx-auto rounded-2xl border border-heritage-border shadow-lg">
+                  <img src="assets/images/Annadana mahaswamigalu.jpeg" alt="ಪರಮ ಪೂಜ್ಯ ಹಿರಿಯ ಅನ್ನದಾನ ಮಹಾ ಶಿವಯೋಗಿಗಳು (ಗಡ್ಡದ ಅಜ್ಜನವರು)" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x400/14110E/d4af37?text=Gaddada+Ajjanavaru';">
+                </div>
+                <span class="inline-block mt-3 px-3 py-1 rounded-full bg-heritage-stone border border-heritage-border text-amber-300 text-xs font-sans font-bold">
+                  6TH PEETHADHIPATHI
+                </span>
+              </div>
+              <div class="md:col-span-8 space-y-3">
+                <span class="text-xs font-sans font-bold text-amber-400 bg-amber-950/70 px-2.5 py-0.5 rounded border border-amber-800">ಮಹಾ ಶಿವಯೋಗಿಗಳು</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                  ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಹಿರಿಯ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರು (ಗಡ್ಡದ ಅಜ್ಜನವರು)
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-300 font-sans">
+                  Revered Mystic and Saint of Halakere Peetha
+                </p>
+                <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                  ತಮ್ಮ ದಿವ್ಯ ತಪಸ್ಸಿನಿಂದ ಮಠದ ಖ್ಯಾತಿಯನ್ನು ರಾಜ್ಯಾದ್ಯಂತ ಪಸರಿಸಿದ ಮಹಾಯೋಗಿಗಳು. ಭಕ್ತರ ಕಷ್ಟಗಳನ್ನು ಪರಿಹರಿಸಿದ ಪವಾಡ ಪುರುಷರು.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 1: Kartru Annadaneshwar Swamiji (Founder) -->
+          <div class="bg-heritage-card border border-heritage-border rounded-3xl p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div class="md:col-span-4 text-center">
+                <div class="w-44 h-44 sm:w-52 sm:h-52 mx-auto rounded-2xl bg-heritage-black border border-heritage-gold/40 flex items-center justify-center text-heritage-gold">
+                  <i class="fa-solid fa-place-of-worship text-5xl sm:text-6xl"></i>
+                </div>
+                <span class="inline-block mt-3 px-3 py-1 rounded-full bg-heritage-stone border border-heritage-border text-amber-300 text-xs font-sans font-bold">
+                  ESTD. CIRCA 16TH CENTURY
+                </span>
+              </div>
+              <div class="md:col-span-8 space-y-3">
+                <span class="text-xs font-sans font-bold text-amber-400 bg-amber-950/70 px-2.5 py-0.5 rounded border border-amber-800">FOUNDER & ADI GURU</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                  ಕರ್ತೃ ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳು
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-300 font-sans">
+                  The Divine Spark and Eternal Gadduge of Halakere
+                </p>
+                <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                  ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಆದಿ ಸಂಸ್ಥಾಪಕರು. ಚಿತ್ತರಗಿಯಿಂದ ಸಂಚರಿಸಿ ಹಾಲಕೆರೆಯಲ್ಲಿ ಜೀವಂತ ಸಮಾಧಿ (ಮಹಾ ಗದ್ದುಗೆ) ಪ್ರವೇಶಿಸಿದ ಜ್ಯೋತಿರ್ಲಿಂಗ ಸ್ವರೂಪಿಗಳು. ನಿತ್ಯ ಅನ್ನದಾಸೋಹದ ಮೂಲ ಸೂತ್ರಧಾರಿಗಳು.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 4: ಶಿವಯೋಗ ಮಂದಿರ & ಹಾಲಕೆರೆ (SHIVAYOG MANDIRA CONNECTION) -->
+    <!-- ============================================================== -->
+    <section id="view-shivayog" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="border-b border-heritage-border pb-6 mb-8 text-center sm:text-left">
+          <span class="text-xs text-amber-400 font-sans font-bold tracking-widest uppercase">HISTORIC ALLIANCE & SANGAMA</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಶಿವಯೋಗ ಮಂದಿರ ಮತ್ತು ಹಾಲಕೆರೆ ಮಠದ ಅವಿನಾಭಾವ ಸಂಬಂಧ
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base max-w-3xl mt-2 font-kannadaBody">
+            ಪೂಜ್ಯ ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳ ದೀರ್ಘಾವಧಿಯ ಅಧ್ಯಕ್ಷತೆ, ಏಷ್ಯಾದ ಅತಿ ಎತ್ತರದ ರಥ ನಿರ್ಮಾಣ ಹಾಗೂ ನಾಡಿನ ಪೀಠಾಧಿಪತಿಗಳ ಸಂಸ್ಕಾರ ತಾಣ.
+          </p>
+        </div>
+
+        <!-- Banner Card 1: Mandira Entrance -->
+        <div class="bg-gradient-to-r from-heritage-card via-heritage-elevated to-heritage-card border-2 border-heritage-gold/50 rounded-3xl p-6 sm:p-10 mb-8 shadow-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-4">
+              <span class="text-xs font-sans font-bold text-amber-300 bg-amber-950 px-3 py-1 rounded-full border border-amber-800">
+                PITHA TRADITION & LEADERSHIP
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                ಶಿವಯೋಗ ಮಂದಿರದ ಶಕ್ತಿ ಕೇಂದ್ರವಾಗಿ ಹಾಲಕೆರೆ ಗುರುಗಳು
+              </h3>
+              <p class="text-heritage-paper/90 text-sm sm:text-base font-kannadaBody leading-relaxed">
+                ಬಾಗಲಕೋಟೆ ಜಿಲ್ಲೆ ಬಾದಾಮಿ ಸೀಮೆಯ ಮಲಪ್ರಭಾ ನದಿಯ ತೀರದಲ್ಲಿರುವ **ಶಿವಯೋಗ ಮಂದಿರ**ವು ಇಡೀ ವೀರಶೈವ ಲಿಂಗಾಯತ ಮಠಗಳ ಮಾತೃ ಸಂಸ್ಥೆ. ಈ ಸಂಸ್ಥೆಗೆ ಹಾಲಕೆರೆಯ ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು ದೀರ್ಘಕಾಲದವರೆಗೆ ಅಧ್ಯಕ್ಷರಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿ ಕಾಯಕದ ಕ್ರಾಂತಿ ಮಾಡಿದರು.
+              </p>
+              <div class="space-y-2 text-xs sm:text-sm text-heritage-muted font-kannadaBody">
+                <p><i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> **ವಿರಕ್ತ ಸ್ವಾಮೀಜಿಗಳ ತರಬೇತಿ:** ನೂರಾರು ಯುವ ಸಾಧಕರಿಗೆ ಸಂಸ್ಕೃತ, ವೇದ, ಆಗಮ, ಶರಣ ಸಾಹಿತ್ಯ ಮತ್ತು ಶಿವಪೂಜಾ ವಿಧಿಗಳನ್ನು ಕಲಿಸಿ ಕರ್ನಾಟಕ ಮತ್ತು ಮಹಾರಾಷ್ಟ್ರದ ನೂರಾರು ಮಠಗಳಿಗೆ ಪೀಠಾಧಿಪತಿಗಳನ್ನಾಗಿ ನಿಯೋಜಿಸಿದರು.</p>
+                <p><i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> **ಅಧಿಕೃತ ಶಾಖಾ ಮಠ:** ಅಧಿಕೃತ ದಾಖಲೆಗಳ ಪ್ರಕಾರ ಶಿವಯೋಗ ಮಂದಿರದಲ್ಲೂ ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸ್ವಾಮಿ ವಿರಕ್ತಮಠವು ನೆಲೆಗೊಂಡಿದೆ.</p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 text-center">
+              <div class="image-ratio-box h-[220px] sm:h-[260px] rounded-2xl border-2 border-heritage-gold shadow-xl">
+                <img src="assets/images/2233.jpg" alt="ಶಿವಯೋಗ ಮಂದಿರ ಮಹಾದ್ವಾರ" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='assets/images/hero.jpg';">
+              </div>
+              <span class="block mt-2 text-xs text-amber-300 font-sans font-bold">ಶ್ರೀ ಮದ್ವೀರಶೈವ ಶಿವಯೋಗಮಂದಿರ ಸಂಸ್ಥೆ ಮಹಾದ್ವಾರ</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Image Card: Shivayog Mandira -->
+        <div class="bg-heritage-card border border-heritage-border rounded-3xl p-4 sm:p-6 mb-8 shadow-xl">
+          <div class="image-ratio-box aspect-[3/2] rounded-2xl border border-heritage-gold/50 shadow-lg">
+            <img src="assets/images/shivayogmandira.jpeg" alt="ಶಿವಯೋಗ ಮಂದಿರ" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='assets/images/hero.jpg';">
+          </div>
+          <p class="mt-3 text-center text-sm font-kannadaDisplay font-bold text-amber-300">ಶಿವಯೋಗ ಮಂದಿರದ ಪವಿತ್ರ ಪರಿಸರ</p>
+        </div>
+
+        <!-- Banner Card 2: Asia's Tallest Chariot -->
+        <div class="bg-gradient-to-r from-heritage-card via-heritage-elevated to-heritage-card border border-heritage-border rounded-3xl p-6 sm:p-10 mb-8 shadow-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-5 text-center order-2 lg:order-1">
+              <div class="image-ratio-box h-[260px] sm:h-[320px] rounded-2xl border border-heritage-gold shadow-xl">
+                <img src="assets/images/largest ratha.jpeg" alt="ಏಷ್ಯಾದ ಅತಿ ಎತ್ತರದ ಮರದ ರಥೋತ್ಸವ" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='assets/images/rathostav.jpg';">
+              </div>
+              <span class="block mt-2 text-xs text-amber-300 font-sans font-bold">ಏಷ್ಯಾದ ಅತಿ ಎತ್ತರದ ಮರದ ರಥೋತ್ಸವ — ಶಿವಯೋಗ ಮಂದಿರ</span>
+            </div>
+
+            <div class="lg:col-span-7 space-y-4 order-1 lg:order-2">
+              <span class="text-xs font-sans font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">
+                ASIA'S TALLEST WOODEN CHARIOT
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                ಐತಿಹಾಸಿಕ ಬೃಹತ್ ಮರದ ರಥ ನಿರ್ಮಾಣದ ಸಾಹಸ
+              </h3>
+              <p class="text-heritage-paper/90 text-sm sm:text-base font-kannadaBody leading-relaxed">
+                ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳ ಅಮೃತ ಹಸ್ತದಿಂದ ಶಿವಯೋಗ ಮಂದಿರದ ಇತಿಹಾಸದಲ್ಲಿ ಸುಮಾರು 100+ ಅಡಿಗಿಂತಲೂ ಎತ್ತರದ, ಇಡೀ ಏಷ್ಯಾದಲ್ಲೇ ಅತಿ ಎತ್ತರದ ಮರದ ರಥ ನಿರ್ಮಾಣಗೊಂಡು ಲೋಕಾರ್ಪಣೆಗೊಂಡಿತು. ಲಕ್ಷಾಂತರ ಭಕ್ತರು ಪಾಲ್ಗೊಳ್ಳುವ ಈ ರಥೋತ್ಸವವು ಹಾಲಕೆರೆ-ಶಿವಯೋಗ ಮಂದಿರದ ಶ್ರೇಷ್ಠ ಸಾಧನೆಗೆ ಸಾಕ್ಷಿಯಾಗಿದೆ.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 5: 27 ಶಾಖಾ ಮಠಗಳು (BOOK-RECORDED BRANCH NETWORK) -->
+    <!-- ============================================================== -->
+    <section id="view-branches" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">27 BOOK-RECORDED MATHAS</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನದ 27 ದಾಖಲಿತ ಮಠಗಳು
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ಪುಸ್ತಕದ ದಾಖಲೆಗಳಲ್ಲಿರುವ ಊರುಗಳ ಹೆಸರನ್ನು ಮಾತ್ರ ಇಲ್ಲಿ ನೀಡಲಾಗಿದೆ; ಹಾಲಕೆರೆ ಕೇಂದ್ರ ಪೀಠ ಮೊದಲನೆಯದಾಗಿದೆ.
+          </p>
+
+          <!-- Verification Badge -->
+          <div class="mt-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-heritage-card border border-heritage-border text-xs text-amber-300 font-sans">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span>Halakere Central Matha Ranked #1 • 27 Book Records</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="bg-heritage-card border border-heritage-border rounded-2xl p-4 sm:p-5 mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="relative w-full md:w-80">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-heritage-muted text-sm"></i>
+            <input type="text" id="branchSearchInput" oninput="filterBranches()" placeholder="ಶಾಖೆ ಅಥವಾ ಊರಿನ ಹೆಸರು ಹುಡುಕಿ (Search)..." class="w-full bg-heritage-elevated border border-heritage-border rounded-xl pl-10 pr-4 py-2 text-sm text-heritage-paper placeholder-heritage-muted focus:outline-none focus:border-heritage-gold font-sans">
+          </div>
+
+          <!-- Region Filter Chips -->
+          <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto no-scrollbar pb-1 sm:pb-0 font-sans">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-bold bg-heritage-gold text-heritage-black">All (27)</span>
+          </div>
+        </div>
+
+        <!-- 27 Branches Dynamic Grid Container -->
+        <div id="branchesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated by JavaScript below -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 6: ಪವಿತ್ರ ಸನ್ನಿಧಿಗಳು (SACRED SANNIDHIS) -->
+    <!-- ============================================================== -->
+    <section id="view-sannidhi" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">SACRED SANCTUARIES</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಹಾಲಕೆರೆ ಕ್ಷೇತ್ರದ ಪವಿತ್ರ ಸನ್ನಿಧಿಗಳು
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ಮಠದ ಆವರಣದಲ್ಲಿರುವ ಕರ್ತೃ ಗದ್ದುಗೆ, ಅಖಂಡ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ಭವನ ಹಾಗೂ ತಪಸ್ವಿಗಳ ಸಮಾಧಿ ಕ್ಷೇತ್ರಗಳು.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Sannidhi 1: Kartru Gadduge -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 sm:p-8 cursor-pointer" onclick="openSannidhiDetail('kartru_gadduge')">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-heritage-gold/20 border border-heritage-gold/40 flex items-center justify-center text-heritage-gold text-2xl">
+                <i class="fa-solid fa-place-of-worship"></i>
+              </div>
+              <span class="text-xs font-sans text-amber-300 bg-amber-950/70 border border-amber-800 px-2.5 py-0.5 rounded-full font-bold">CENTRAL GADDUGE</span>
+            </div>
+            <h3 class="text-2xl font-bold font-kannadaDisplay text-heritage-goldLight mb-2">ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳ ಮಹಾಗದ್ದುಗೆ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಮಠದ ಗರ್ಭಗುಡಿ. 500+ ವರ್ಷಗಳ ತಪಸ್ಸಿನ ಪವಿತ್ರ ಶಕ್ತಿಸ್ಥಳ. ನಿತ್ಯ ರುದ್ರಾಭಿಷೇಕ, ಬಿಲ್ವಾರ್ಚನೆ ಹಾಗೂ ಇಷ್ಟಲಿಂಗ ಪೂಜೆ ನೆರವೇರುತ್ತದೆ. ಇಲ್ಲಿ ಪ್ರಾರ್ಥಿಸಿದರೆ ಕಾಯಿಲೆಗಳು ಶಮನಗೊಳ್ಳುತ್ತವೆ ಎಂಬ ಅಚಲ ನಂಬಿಕೆ ಇದೆ.
+            </p>
+            <div class="text-xs text-heritage-gold font-sans font-bold flex items-center justify-between pt-3 border-t border-heritage-border">
+              <span>View Worship Timings & Miracles</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Sannidhi 2: Akhanda Annapurneshwari -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 sm:p-8 cursor-pointer" onclick="openSannidhiDetail('annapurneshwari')">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-300 text-2xl">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <span class="text-xs font-sans text-emerald-400 bg-emerald-950/70 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">AKSHAYA BHANDARA</span>
+            </div>
+            <h3 class="text-2xl font-bold font-kannadaDisplay text-heritage-goldLight mb-2">ಅಖಂಡ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ಪ್ರಸಾದ ಭವನ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಬಂದ ಭಕ್ತರೆಲ್ಲರಿಗೂ ದಿನದ 24 ಗಂಟೆಯೂ ಪ್ರಸಾದ ಒದಗಿಸುವ ಅಕ್ಷಯ ತಾಣ. ಎಷ್ಟೇ ಲಕ್ಷ ಜನ ಭಕ್ತರು ಬಂದರೂ ಎಂದೂ ಪ್ರಸಾದ ಕೊರತೆಯಾಗದಂತೆ ಅನ್ನದಾನೇಶ್ವರರು ಕೃಪೆ ತೋರಿದ ದಾಸೋಹ ಧಾಮ.
+            </p>
+            <div class="text-xs text-heritage-gold font-sans font-bold flex items-center justify-between pt-3 border-t border-heritage-border">
+              <span>Dasoha Schedule & Seva</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Sannidhi 3: Muppina Basavalinga Gadduge -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 sm:p-8 cursor-pointer" onclick="openSannidhiDetail('muppina_gadduge')">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-heritage-stone border border-heritage-border flex items-center justify-center text-heritage-gold text-2xl">
+                <i class="fa-solid fa-monument"></i>
+              </div>
+              <span class="text-xs font-sans text-stone-300 bg-heritage-elevated border border-heritage-border px-2.5 py-0.5 rounded-full font-bold">TAPASVI GADDUGE</span>
+            </div>
+            <h3 class="text-2xl font-bold font-kannadaDisplay text-heritage-goldLight mb-2">ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳ ಗದ್ದುಗೆ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              ಹಾಲಕೆರೆಯ ಹಿರಿಯ ತಪಸ್ವಿ ಗುರುಗಳ ಪಾವನ ಸನ್ನಿಧಿ. ಗಂಭೀರ ಸಾಧನೆ, ಧ್ಯಾನಾನುಷ್ಠಾನ ಹಾಗೂ ಮಾನಸಿಕ ಶಾಂತಿ ನೀಡುವ ದಿವ್ಯ ಕ್ಷೇತ್ರ.
+            </p>
+            <div class="text-xs text-heritage-gold font-sans font-bold flex items-center justify-between pt-3 border-t border-heritage-border">
+              <span>Meditation & History</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Sannidhi 4: Dr. Abhinava Sanganabasava Samadhi Mandir -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-6 sm:p-8 cursor-pointer" onclick="openSannidhiDetail('sanganabasava_samadhi')">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-heritage-copper/30 border border-heritage-copper/60 flex items-center justify-center text-amber-300 text-2xl">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <span class="text-xs font-sans text-emerald-300 bg-emerald-950/70 border border-emerald-800 px-2.5 py-0.5 rounded-full font-bold">SMARAKA MANDIRA</span>
+            </div>
+            <h3 class="text-2xl font-bold font-kannadaDisplay text-heritage-goldLight mb-2">ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳ ಪುಣ್ಯ ಸಮಾಧಿ</h3>
+            <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody leading-relaxed mb-4">
+              2021 ರಲ್ಲಿ ಲಿಂಗೈಕ್ಯರಾದ ತ್ರಿವಿಧ ದಾಸೋಹಿಗಳ ಸ್ಮೃತಿ ಮಂದಿರ. ಈ ತಾಣವು ಶಿಕ್ಷಣ ಪ್ರೇಮಿಗಳಿಗೆ ಮತ್ತು ರೈತ ಚಳವಳಿಯ ಕಾರ್ಯಕರ್ತರಿಗೆ ಪ್ರೇರಣಾದಾಯಕ ಕೇಂದ್ರ.
+            </p>
+            <div class="text-xs text-heritage-gold font-sans font-bold flex items-center justify-between pt-3 border-t border-heritage-border">
+              <span>View Samadhi Details</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 7: ಅನ್ನ & ಅಕ್ಷರ ದಾಸೋಹ (EDUCATION & DASOHA) -->
+    <!-- ============================================================== -->
+    <section id="view-dasoha" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-emerald-400 font-sans font-bold">TRIVIDHA DASOHA MISSION</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಅನ್ನ ದಾಸೋಹ & ಅಕ್ಷರ ದಾಸೋಹ ಮಹಾಮನೆ
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            “ಜ್ಞಾನವನ್ನು ಹಂಚುವುದು — ಪೀಳಿಗೆಯನ್ನು ನಿರ್ಮಿಸುವುದು.” ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಸಮಾಜಮುಖಿ ಶಿಕ್ಷಣ ಮತ್ತು ಸೇವಾ ಯೋಜನೆಗಳು.
+          </p>
+        </div>
+
+        <!-- Deaf and Dumb School Showcase -->
+        <div class="bg-heritage-card border-2 border-heritage-gold/50 rounded-3xl p-6 sm:p-10 mb-8 shadow-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <span class="text-xs font-sans font-bold text-amber-300 bg-amber-950 px-3 py-1 rounded-full border border-amber-800">
+                BENEVOLENT SOCIAL REFORM
+              </span>
+              <h3 class="text-2xl sm:text-4xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಕಿವುಡ ಮತ್ತು ಮೂಕರ ಉಚಿತ ವಸತಿ ಶಾಲೆ, ನರೇಗಲ್
+              </h3>
+              <p class="text-xs sm:text-sm text-heritage-muted font-sans">
+                Founded by Lingaikya Dr. Abhinava Sanganabasava Swamiji
+              </p>
+              <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                ಮಾತು ಬಾರದ, ಕಿವಿ ಕೇಳಿಸದ ಗ್ರಾಮೀಣ ಬಡ ಮಕ್ಕಳು ಸಮಾಜದಲ್ಲಿ ಯಾರ ಮೇಲೂ ಅವಲಂಬಿತರಾಗದೆ ಸ್ವಾಭಿಮಾನದಿಂದ ಬದುಕಲು ಲಿಂ. ಪೂಜ್ಯ ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಶ್ರೀಗಳು ನರೇಗಲ್‌ನಲ್ಲಿ ಈ ಉಚಿತ ವಸತಿ ಶಾಲೆಯನ್ನು ಸ್ಥಾಪಿಸಿದರು.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="bg-heritage-elevated p-3 rounded-xl border border-heritage-border text-xs text-heritage-paper/90">
+                  <i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>
+                  1 ರಿಂದ 10ನೇ ತರಗತಿಯವರೆಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ಶಿಕ್ಷಣ, ಊಟ, ಸಮವಸ್ತ್ರ ಮತ್ತು ಹಾಸ್ಟೆಲ್
+                </div>
+                <div class="bg-heritage-elevated p-3 rounded-xl border border-heritage-border text-xs text-heritage-paper/90">
+                  <i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>
+                  ವಿಶೇಷ ತಜ್ಞ ಶಿಕ್ಷಕರಿಂದ ಸನ್ನೆ ಭಾಷೆ (Sign Language) ಹಾಗೂ ವಾಕ್ ಚಿಕಿತ್ಸೆ (Speech Therapy)
+                </div>
+                <div class="bg-heritage-elevated p-3 rounded-xl border border-heritage-border text-xs text-heritage-paper/90">
+                  <i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>
+                  ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ, ಕರಕುಶಲ ಕಲೆ ಮತ್ತು ಸ್ವಾವಲಂಬನಾ ತರಬೇತಿ
+                </div>
+                <div class="bg-heritage-elevated p-3 rounded-xl border border-heritage-border text-xs text-heritage-paper/90">
+                  <i class="fa-solid fa-check text-emerald-400 mr-1.5"></i>
+                  ಪ್ಯಾರಾ-ಸ್ಪೋರ್ಟ್ಸ್ ಮತ್ತು ರಾಜ್ಯಮಟ್ಟದ ಕ್ರೀಡಾಕೂಟಗಳಲ್ಲಿ ಚಿನ್ನದ ಪದಕಗಳ ಸಾಧನೆ
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 bg-heritage-elevated p-6 rounded-2xl border border-heritage-border text-center space-y-3">
+              <div class="w-16 h-16 mx-auto rounded-full bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-3xl">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <h4 class="text-base font-bold font-kannadaDisplay text-heritage-gold">ಮಕ್ಕಳ ಪ್ರಾಯೋಜಕತ್ವ (Sponsor)</h4>
+              <p class="text-xs text-heritage-muted font-kannadaBody">
+                ಈ ವಿಶೇಷಚೇತನ ಶಾಲಾ ಮಕ್ಕಳ ಊಟ, ಬಟ್ಟೆ ಅಥವಾ ಶಿಕ್ಷಣಕ್ಕೆ ಕೈಜೋಡಿಸಲು ಮಠದ ಸೇವಾ ಸಮಿತಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.
+              </p>
+              <button onclick="switchTab('visit')" class="w-full py-2.5 rounded-xl bg-heritage-gold text-heritage-black font-sans font-bold text-xs hover:bg-heritage-goldLight transition-all">
+                Sponsor a Child / Seva
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6">
+            <div class="text-amber-400 text-2xl mb-3"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h4 class="text-lg font-bold font-kannadaDisplay text-heritage-paper mb-1">ಸಂಸ್ಕೃತ & ವೇದಾಂತ ಪಾಠಶಾಲೆ</h4>
+            <p class="text-xs text-heritage-muted font-kannadaBody leading-relaxed">
+              ಹಾಲಕೆರೆ ಮತ್ತು ನರೇಗಲ್‌ನಲ್ಲಿ ಪ್ರಾಚೀನ ಸಂಸ್ಕೃತ ಗ್ರಂಥಗಳು, ವಚನ ಸಾಹಿತ್ಯ ಮತ್ತು ಶರಣ ದರ್ಶನ ಅಧ್ಯಯನ ಕೇಂದ್ರಗಳು.
+            </p>
+          </div>
+          <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6">
+            <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-bowl-rice"></i></div>
+            <h4 class="text-lg font-bold font-kannadaDisplay text-heritage-paper mb-1">ನಿತ್ಯ ಅನ್ನ ದಾಸೋಹ ಮಹಾಮನೆ</h4>
+            <p class="text-xs text-heritage-muted font-kannadaBody leading-relaxed">
+              ಪ್ರತಿದಿನ ಸಾವಿರಾರು ಭಕ್ತರಿಗೆ, ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಹಾಗೂ ಯಾತ್ರಾರ್ಥಿಗಳಿಗೆ ಬಿಸಿ ಪ್ರಸಾದ ನೀಡುವ ಅಖಂಡ ವ್ಯವಸ್ಥೆ.
+            </p>
+          </div>
+          <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6">
+            <div class="text-red-400 text-2xl mb-3"><i class="fa-solid fa-hospital"></i></div>
+            <h4 class="text-lg font-bold font-kannadaDisplay text-heritage-paper mb-1">ಉಚಿತ ಆರೋಗ್ಯ ಸೇವೆ & ಆಸ್ಪತ್ರೆ</h4>
+            <p class="text-xs text-heritage-muted font-kannadaBody leading-relaxed">
+              ಗ್ರಾಮೀಣ ಜನರಿಗೆ ಉಚಿತ ನೇತ್ರ ಚಿಕಿತ್ಸೆ, ಆರೋಗ್ಯ ತಪಾಸಣೆ ಶಿಬಿರಗಳು ಹಾಗೂ ಔಷಧ ವಿತರಣಾ ಸೇವೆ.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 8: ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು (EDUCATION INSTITUTIONS) -->
+    <!-- ============================================================== -->
+    <section id="view-education" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">ANNADANESHWAR EDUCATION INSTITUTIONS</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಅನ್ನದಾನೇಶ್ವರ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ನರೇಗಲ್ ಮತ್ತು ಬೇಲೂರಿನ ಸಂಸ್ಥೆಗಳ ಜೊತೆಗೆ, ಅನ್ನದಾನೇಶ್ವರ ಶಿಕ್ಷಣ ಟ್ರಸ್ಟ್‌ಗಳ ಅಡಿಯಲ್ಲಿ ಇನ್ನೂ ಹಲವು ಶಾಲೆಗಳು ಮತ್ತು ಕಾಲೇಜುಗಳಿವೆ.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8">
+            <div class="flex items-center justify-between gap-4 mb-5">
+              <div class="w-12 h-12 rounded-xl bg-heritage-gold/20 border border-heritage-gold/40 flex items-center justify-center text-heritage-gold text-2xl">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <span class="text-xs font-sans text-amber-300 bg-amber-950/70 border border-amber-800 px-2.5 py-1 rounded-full font-bold">PRE-UNIVERSITY COLLEGE</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay text-heritage-paper mb-3">S A PU College</h3>
+            <p class="text-sm text-heritage-muted font-kannadaBody flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-amber-400"></i>
+              <span>Naregal (ನರೇಗಲ್)</span>
+            </p>
+          </article>
+
+          <article class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8">
+            <div class="flex items-center justify-between gap-4 mb-5">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <span class="text-xs font-sans text-emerald-300 bg-emerald-950/70 border border-emerald-800 px-2.5 py-1 rounded-full font-bold">HIGH SCHOOL & PRE-UNIVERSITY</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay text-heritage-paper mb-3">S A High School and PU College</h3>
+            <p class="text-sm text-heritage-muted font-kannadaBody flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-amber-400"></i>
+              <span>Belur (ಬೇಲೂರು)</span>
+            </p>
+          </article>
+
+          <article class="bg-heritage-card border border-heritage-border rounded-2xl p-6 sm:p-8 md:col-span-2">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/40 flex items-center justify-center text-amber-300 text-2xl">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold font-kannadaDisplay text-heritage-paper">ಇತರೆ ಶಾಲೆಗಳು ಮತ್ತು ಕಾಲೇಜುಗಳು</h3>
+            </div>
+            <p class="text-sm text-heritage-muted font-kannadaBody leading-relaxed">
+              S A PU College, ನರೇಗಲ್ ಮತ್ತು S A High School and PU College, ಬೇಲೂರು ಇವುಗಳ ಜೊತೆಗೆ ಅನ್ನದಾನೇಶ್ವರ ಶಿಕ್ಷಣ ಟ್ರಸ್ಟ್‌ಗಳ ಅಡಿಯಲ್ಲಿ ಇನ್ನೂ ಹಲವು ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿವೆ.
+            </p>
+          </article>
+        </div>
+
+        <div class="mt-8 bg-emerald-950/40 border border-emerald-700/50 rounded-2xl p-5 sm:p-6 flex items-start gap-3">
+          <i class="fa-solid fa-heart text-emerald-400 text-xl mt-0.5"></i>
+          <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+            ಅನ್ನದಾನೇಶ್ವರ ಶಿಕ್ಷಣ ಟ್ರಸ್ಟ್‌ಗಳು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶಿಕ್ಷಣದ ಅವಕಾಶಗಳನ್ನು ಒದಗಿಸಿ, ಅವರ ಕಲಿಕೆ ಮತ್ತು ಭವಿಷ್ಯದ ಬೆಳವಣಿಗೆಗೆ ಸಹಕಾರಿಯಾಗಿವೆ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 9: ಮಹಾ ರಥೋತ್ಸವ (174TH RATHOTSAVA) -->
+    <!-- ============================================================== -->
+    <section id="view-rathotsava" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-amber-400 font-sans font-bold">174TH ANNUAL CAR FESTIVAL</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಹಾಲಕೆರೆ 174th ಮಹಾ ರಥೋತ್ಸವ & ಜಾತ್ರೆ
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ಮಹಿಳೆಯರೇ ಎಳೆಯುವ ಐತಿಹಾಸಿಕ ಬೆಳ್ಳಿ ರಥ, ಡೊಳ್ಳು ಕುಣಿತ, ನಂದಿಕೋಲು ಮೆರವಣಿಗೆ ಹಾಗೂ ಲಕ್ಷಾಂತರ ಭಕ್ತರ ಸಮ್ಮಿಲನ.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-heritage-stone via-heritage-card to-heritage-stone border border-heritage-gold/50 rounded-3xl p-6 sm:p-10 mb-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <span class="text-xs font-sans font-bold text-amber-300 bg-amber-950 px-3 py-1 rounded-full border border-amber-800">
+                UNIQUE WORLD TRADITION
+              </span>
+              <h3 class="text-2xl sm:text-4xl font-extrabold font-kannadaDisplay text-heritage-paper">
+                ಮಹಿಳೆಯರೇ ಎಳೆಯುವ ಪವಿತ್ರ ಬೆಳ್ಳಿ ರಥ!
+              </h3>
+              <p class="text-sm sm:text-base text-heritage-paper/90 font-kannadaBody leading-relaxed">
+                ಭಾರತದ ಧಾರ್ಮಿಕ ಇತಿಹಾಸದಲ್ಲಿ ಬಹುತೇಕ ಕಡೆ ರಥಗಳನ್ನು ಪುರುಷರು ಮಾತ್ರ ಎಳೆಯುವುದು ಪದ್ಧತಿ. ಆದರೆ ಹಾಲಕೆರೆ ಮಠದಲ್ಲಿ 12ನೇ ಶತಮಾನದ ಕಲ್ಯಾಣದ ಅಕ್ಕಮಹಾದೇವಿ, ಮುಕ್ತಾಯಕ್ಕರಂತಹ ಶರಣೆಯರ ಸ್ತ್ರೀ ಸಮಾನತೆಯನ್ನು ಎತ್ತಿಹಿಡಿಯಲು **ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು ಮಹಿಳೆಯರೇ ಬೆಳ್ಳಿ ರಥವನ್ನು ಎಳೆಯುವ ಕ್ರಾಂತಿಕಾರಿ ಪದ್ಧತಿಯನ್ನು** ಪ್ರಾರಂಭಿಸಿದರು.
+              </p>
+              <p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody">
+                ಪ್ರತಿ ವರ್ಷ ಜಾತ್ರೆಯ ಶುಭದಿನ ಸಾವಿರಾರು ಮಹಿಳೆಯರು ಭಕ್ತಿ-ಭಾವದಿಂದ ಬೆಳ್ಳಿ ರಥದ ಹಗ್ಗವನ್ನು ಹಿಡಿದು ಎಳೆಯುವ ದೃಶ್ಯ ನಾಡಿನಲ್ಲೇ ಅಪ್ರತಿಮ.
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-heritage-elevated p-6 rounded-2xl border border-heritage-border space-y-3">
+              <h4 class="text-base font-bold font-kannadaDisplay text-heritage-gold">ರಥೋತ್ಸವದ ಪ್ರಮುಖ ಆಚರಣೆಗಳು:</h4>
+              <ul class="text-xs text-heritage-paper/90 space-y-2 font-kannadaBody">
+                <li><i class="fa-solid fa-om text-amber-400 mr-2"></i> ಧರ್ಮ ಧ್ವಜಾರೋಹಣ & ಕಳಸಾರೋಹಣ</li>
+                <li><i class="fa-solid fa-drum text-amber-400 mr-2"></i> ಉತ್ತರ ಕರ್ನಾಟಕದ ಸಾಂಪ್ರದಾಯಿಕ ಡೊಳ್ಳು ಕುಣಿತ</li>
+                <li><i class="fa-solid fa-flag text-amber-400 mr-2"></i> ನಂದಿಕೋಲು ಮೆರವಣಿಗೆ & ಭಜನಾ ಮೇಳಗಳು</li>
+                <li><i class="fa-solid fa-wheat-awn text-amber-400 mr-2"></i> ರೈತರ ದವಸ-ಧಾನ್ಯ ತುಲಾಭಾರ ಸೇವೆ</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 10: ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್ (DIGITAL HERITAGE ARCHIVE & 1970 PHOTO) -->
+    <!-- ============================================================== -->
+    <section id="view-archive" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">DIGITAL HERITAGE ARCHIVE</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಹಾಲಕೆರೆ ಮಠದ ಡಿಜಿಟಲ್ ಹೆರಿಟೇಜ್ ಆರ್ಕೈವ್
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            1970 ರ ಅಪರೂಪದ ಛಾಯಾಚಿತ್ರಗಳು, ಬ್ರಿಟಿಷ್ ಗೆಜೆಟಿಯರ್ಸ್ ಹಾಗೂ ತಾಳೆಗರಿ ಹಸ್ತಪ್ರತಿಗಳ ಡಿಜಿಟಲ್ ಪರಿವೀಕ್ಷಕ.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Archive 1: 1970 Siddaganga Swamiji Meet (assets/images/hero.jpg) -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-5 cursor-pointer" onclick="openArchiveInspector('photo_siddaganga')">
+            <div class="image-ratio-box h-[180px] rounded-xl mb-3 border border-heritage-border">
+              <img src="assets/images/hero.jpg" alt="1970 Siddaganga Swamiji with Halakere Swamiji" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/400x300/14110E/d4af37?text=1970+Photo';">
+              <span class="absolute top-2 right-2 bg-black/85 text-[10px] font-sans px-2 py-0.5 rounded text-amber-300 border border-amber-600">HISTORIC 1970</span>
+            </div>
+            <span class="text-[10px] font-sans font-bold text-amber-400 bg-amber-950/70 px-2 py-0.5 rounded border border-amber-800">RARE PHOTOGRAPH</span>
+            <h3 class="text-base font-bold font-kannadaDisplay text-heritage-paper mt-1">ಸಿದ್ಧಗಂಗಾ ಶ್ರೀಗಳು & ಹಾಲಕೆರೆ ಅನ್ನದಾನೇಶ್ವರ ಶ್ರೀಗಳು</h3>
+            <p class="text-xs text-heritage-muted font-kannadaBody mt-1 line-clamp-2">
+              1970 ರಲ್ಲಿ ಕರ್ನಾಟಕದ ತ್ರಿವಿಧ ದಾಸೋಹಿಗಳಾದ ಸಿದ್ಧಗಂಗಾ ಶ್ರೀ ಶಿವಕುಮಾರ ಸ್ವಾಮೀಜಿ ಹಾಗೂ ಹಾಲಕೆರೆ ಶ್ರೀಗಳು ಭೇಟಿಯಾದ ಪವಿತ್ರ ಕ್ಷಣ.
+            </p>
+            <div class="mt-3 pt-2 border-t border-heritage-border flex items-center justify-between text-xs text-heritage-gold font-sans font-bold">
+              <span>View Archival Record</span>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+
+          <!-- Archive 2: British Gazetteer 1884 -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-5 cursor-pointer" onclick="openArchiveInspector('gazetteer_1884')">
+            <div class="h-[180px] rounded-xl flex flex-col items-center justify-center mb-3 bg-heritage-elevated border border-heritage-border text-center p-4">
+              <i class="fa-solid fa-book-bookmark text-4xl text-amber-200 mb-2"></i>
+              <span class="text-xs font-sans font-bold text-heritage-paper">Bombay Gazetteer (1884)</span>
+              <span class="text-[10px] text-heritage-muted font-sans">Dharwar / Ron Taluka Census</span>
+            </div>
+            <span class="text-[10px] font-sans font-bold text-emerald-400 bg-emerald-950/70 px-2 py-0.5 rounded border border-emerald-800">OFFICIAL ARCHIVE</span>
+            <h3 class="text-base font-bold font-kannadaDisplay text-heritage-paper mt-1">ಬ್ರಿಟಿಷ್ ಗೆಜೆಟಿಯರ್‌ನಲ್ಲಿ ಹಾಲಕೆರೆ ಉಲ್ಲೇಖ</h3>
+            <p class="text-xs text-heritage-muted font-kannadaBody mt-1 line-clamp-2">
+              1884 ರ ಬ್ರಿಟಿಷ್ ಗೆಜೆಟಿಯರ್ ದಾಖಲೆಯಲ್ಲಿ ಹಾಲಕೆರೆ ಮಠದ ಅನ್ನದಾಸೋಹ ಹಾಗೂ ವಾರ್ಷಿಕ ರಥೋತ್ಸವದ ಐತಿಹಾಸಿಕ ವಿವರಣೆ.
+            </p>
+            <div class="mt-3 pt-2 border-t border-heritage-border flex items-center justify-between text-xs text-heritage-gold font-sans font-bold">
+              <span>Inspect English Records</span>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+
+          <!-- Archive 3: Palm Leaf Manuscript -->
+          <div class="heritage-card bg-heritage-card rounded-2xl p-5 cursor-pointer" onclick="openArchiveInspector('talegari_1')">
+            <div class="h-[180px] rounded-xl flex flex-col items-center justify-center mb-3 bg-heritage-elevated border border-heritage-border text-center p-4">
+              <i class="fa-solid fa-scroll text-4xl text-heritage-gold mb-2"></i>
+              <span class="text-xs font-sans font-bold text-heritage-paper">Palm Leaf Manuscript #01</span>
+              <span class="text-[10px] text-heritage-muted font-sans">Old Halegannada Verses</span>
+            </div>
+            <span class="text-[10px] font-sans font-bold text-sky-400 bg-sky-950/70 px-2 py-0.5 rounded border border-sky-800">PALM LEAF OCR</span>
+            <h3 class="text-base font-bold font-kannadaDisplay text-heritage-paper mt-1">ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಚರಿತ್ರೆ ಕಾವ್ಯ</h3>
+            <p class="text-xs text-heritage-muted font-kannadaBody mt-1 line-clamp-2">
+              ಸುಮಾರು 17ನೇ ಶತಮಾನದಲ್ಲಿ ಹಳೆಗನ್ನಡದಲ್ಲಿ ರಚಿತವಾದ ಕರ್ತೃ ಶ್ರೀಗಳ ಆಗಮನ ಮತ್ತು ಪವಾಡಗಳ ಕಂದ ಪದ್ಯಗಳು.
+            </p>
+            <div class="mt-3 pt-2 border-t border-heritage-border flex items-center justify-between text-xs text-heritage-gold font-sans font-bold">
+              <span>View Transcript & OCR</span>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 11: ಮಠವನ್ನು ಭೇಟಿ ಮಾಡಿ & ಸೇವಾ ಕಚೇರಿ (VISIT & CONTACT) -->
+    <!-- ============================================================== -->
+    <section id="view-visit" class="tab-view">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-widest text-heritage-gold font-sans font-bold">PILGRIMAGE & SEVA</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-kannadaDisplay gold-gradient-text mt-1">
+            ಮಠವನ್ನು ಭೇಟಿ ಮಾಡಿ • ದರ್ಶನ & ಸೇವಾ ವಿವರ
+          </h2>
+          <p class="text-heritage-muted text-sm sm:text-base font-kannadaBody mt-2">
+            ಹಾಲಕೆರೆ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠಕ್ಕೆ ಭೇಟಿ ನೀಡಲು ಮಾರ್ಗದರ್ಶಿ ಹಾಗೂ ಸೇವಾ ಸಂಕಲ್ಪ.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Column 1: Timings & Routes -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6">
+              <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-gold mb-3 flex items-center gap-2">
+                <i class="fa-regular fa-clock"></i> ದರ್ಶನ & ಪ್ರಸಾದ ಸಮಯ (Timings)
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-sans">
+                <div class="bg-heritage-elevated p-3.5 rounded-xl border border-heritage-border">
+                  <span class="text-amber-400 font-bold block mb-1">Morning Darshan:</span>
+                  <span class="text-base text-heritage-paper font-bold">05:30 AM – 01:00 PM</span>
+                  <p class="text-heritage-muted mt-1 font-kannadaBody text-[11px]">ರುದ್ರಾಭಿಷೇಕ, ಕರ್ತೃ ಗದ್ದುಗೆ ಮಹಾಪೂಜೆ</p>
+                </div>
+                <div class="bg-heritage-elevated p-3.5 rounded-xl border border-heritage-border">
+                  <span class="text-amber-400 font-bold block mb-1">Evening Darshan:</span>
+                  <span class="text-base text-heritage-paper font-bold">04:30 PM – 09:00 PM</span>
+                  <p class="text-heritage-muted mt-1 font-kannadaBody text-[11px]">ಸಾಯಂ ಮಂಗಳಾರತಿ, ಭಜನೆ & ಪ್ರವಚನ</p>
+                </div>
+                <div class="bg-heritage-elevated p-3.5 rounded-xl border border-heritage-border sm:col-span-2">
+                  <span class="text-emerald-400 font-bold block mb-1">Free Anna Prasada Timings:</span>
+                  <span class="text-sm text-heritage-paper font-bold">12:30 PM – 03:30 PM & 07:45 PM – 09:45 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-heritage-card border border-heritage-border rounded-2xl p-6">
+              <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-gold mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-route"></i> ತಲುಪುವ ಮಾರ್ಗಗಳು (How to Reach)
+              </h3>
+              <div class="space-y-3 text-xs sm:text-sm font-kannadaBody text-heritage-paper/90">
+                <p><strong class="text-amber-400 font-sans">By Road:</strong> ಗದಗ, ರೋಣ, ಗಜೇಂದ್ರಗಡ, ಕುಷ್ಟಗಿ ಮತ್ತು ಬಾದಾಮಿಯಿಂದ ಹಾಲಕೆರೆಗೆ ನಿರಂತರ KSRTC ಬಸ್ ಸೌಲಭ್ಯವಿದೆ.</p>
+                <p><strong class="text-amber-400 font-sans">By Railway:</strong> ಹತ್ತಿರದ ರೈಲು ನಿಲ್ದಾಣ: **Gadag Junction (45 km)** ಅಥವಾ **Badami (50 km)**.</p>
+                <p><strong class="text-amber-400 font-sans">By Airport:</strong> ಹತ್ತಿರದ ವಿಮಾನ ನಿಲ್ದಾಣ: **Hubballi Airport - HBX (105 km)**.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Seva Form -->
+          <div class="lg:col-span-5 bg-heritage-card border border-heritage-gold/40 rounded-2xl p-6">
+            <h3 class="text-xl font-bold font-kannadaDisplay text-heritage-gold mb-1">ಸೇವಾ ಸಂಕಲ್ಪ & ಭಕ್ತರ ಸಂಪರ್ಕ</h3>
+            <p class="text-xs text-heritage-muted font-kannadaBody mb-5">
+              ನಿತ್ಯ ಅನ್ನದಾಸೋಹ ಅಥವಾ ಕಿವುಡ-ಮೂಕರ ಶಾಲೆಗೆ ನಿಮ್ಮ ಸೇವಾ ಸಂಕಲ್ಪ ತಿಳಿಸಿ.
+            </p>
+
+            <form onsubmit="handleSevaSubmit(event)" class="space-y-3.5 text-xs font-sans">
+              <div>
+                <label class="block text-heritage-muted mb-1 font-kannadaBody">ಭಕ್ತರ ಹೆಸರು (Full Name)</label>
+                <input type="text" required placeholder="ಉದಾ: ಬಸವರಾಜ" class="w-full bg-heritage-elevated border border-heritage-border rounded-xl px-3 py-2 text-sm text-heritage-paper focus:outline-none focus:border-heritage-gold">
+              </div>
+              <div>
+                <label class="block text-heritage-muted mb-1 font-kannadaBody">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ (Phone Number)</label>
+                <input type="tel" required placeholder="9876543210" class="w-full bg-heritage-elevated border border-heritage-border rounded-xl px-3 py-2 text-sm text-heritage-paper focus:outline-none focus:border-heritage-gold">
+              </div>
+              <div>
+                <label class="block text-heritage-muted mb-1 font-kannadaBody">ಸೇವೆಯ ವಿಧ (Choose Seva)</label>
+                <select class="w-full bg-heritage-elevated border border-heritage-border rounded-xl px-3 py-2 text-sm text-heritage-paper focus:outline-none focus:border-heritage-gold font-kannadaBody">
+                  <option>ನಿತ್ಯ ಅನ್ನ ದಾಸೋಹ ಸೇವೆ</option>
+                  <option>ನರೇಗಲ್ ಕಿವುಡ ಮತ್ತು ಮೂಕರ ಶಾಲಾ ಮಕ್ಕಳ ಪೋಷಣೆ</option>
+                  <option>ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಗದ್ದುಗೆ ಮಹಾಪೂಜೆ</option>
+                  <option>174th ಮಹಾ ರಥೋತ್ಸವ ಸೇವಾ ನಿಧಿ</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-heritage-muted mb-1 font-kannadaBody">ಟಿಪ್ಪಣಿ / ಊರು (Place / Gotra)</label>
+                <textarea rows="2" placeholder="ವಿಳಾಸ ಅಥವಾ ಗೋತ್ರ..." class="w-full bg-heritage-elevated border border-heritage-border rounded-xl px-3 py-2 text-sm text-heritage-paper focus:outline-none focus:border-heritage-gold"></textarea>
+              </div>
+              <button type="submit" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-heritage-gold to-heritage-copper text-heritage-black font-kannadaDisplay font-bold text-sm shadow hover:shadow-lg transition-all">
+                ಸೇವಾ ಸಂಕಲ್ಪ ಸಮರ್ಪಿಸಿ
+              </button>
+              <div id="sevaAlert" class="hidden p-3 rounded-xl bg-emerald-950 border border-emerald-500/50 text-emerald-300 text-xs text-center font-kannadaBody">
+                ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಸೇವಾ ಸಂಕಲ್ಪ ದಾಖಲಾಗಿದೆ.
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Heritage Deep-Reader Modal Dialog -->
+  <div id="heritageModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-heritage-card border-2 border-heritage-gold/60 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col my-auto">
+      
+      <div class="sticky top-0 bg-heritage-elevated/95 backdrop-blur border-b border-heritage-border px-6 py-4 flex items-center justify-between z-10">
+        <span id="modalCategoryBadge" class="text-xs font-sans font-bold uppercase tracking-wider text-amber-400 bg-amber-950/80 px-2.5 py-0.5 rounded border border-amber-800">
+          CATEGORY
+        </span>
+        <button onclick="closeHeritageModal()" class="w-8 h-8 rounded-full bg-heritage-stone border border-heritage-border text-heritage-paper hover:text-amber-400 flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 space-y-4">
+        <h2 id="modalTitle" class="text-2xl sm:text-3xl font-extrabold font-kannadaDisplay gold-gradient-text">Title</h2>
+        <div id="modalSubhead" class="text-xs sm:text-sm text-stone-300 font-sans border-l-2 border-heritage-gold pl-3">Subtitle</div>
+        
+        <div id="modalBody" class="text-heritage-paper/90 font-kannadaBody text-sm sm:text-base leading-relaxed space-y-3">
+          <!-- Injected dynamically -->
+        </div>
+
+        <!-- Archival Split OCR Viewer (If applicable) -->
+        <div id="modalSplitViewer" class="hidden border border-heritage-border rounded-xl overflow-hidden mt-4 bg-heritage-elevated">
+          <div class="grid grid-cols-1 md:grid-cols-2 text-xs">
+            <div class="p-4 border-b md:border-b-0 md:border-r border-heritage-border bg-heritage-stone/40">
+              <span class="font-sans font-bold text-amber-300 block mb-2">Original Archival Document</span>
+              <div id="modalArtifactVisual" class="font-mono text-heritage-muted p-2 bg-heritage-black rounded border border-heritage-border"></div>
+            </div>
+            <div class="p-4 bg-heritage-card">
+              <span class="font-sans font-bold text-emerald-400 block mb-2">Official Kannada Transcript & Notes</span>
+              <div id="modalArtifactText" class="font-kannadaBody leading-relaxed text-heritage-paper/90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky bottom-0 bg-heritage-elevated/95 backdrop-blur border-t border-heritage-border px-6 py-3 flex items-center justify-between text-xs text-heritage-muted font-sans">
+        <span>Shri Math Halakere Digital Heritage Repository</span>
+        <button onclick="closeHeritageModal()" class="px-4 py-1.5 rounded-lg bg-heritage-stone text-heritage-paper border border-heritage-border">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Sticky Quick-Navigation Bar -->
+  <aside aria-label="Mobile Navigation" class="fixed bottom-0 left-0 right-0 z-40 bg-heritage-dark/95 backdrop-blur-xl border-t border-heritage-border/90 px-2 py-1.5 flex items-center justify-around xl:hidden text-center text-[10px] font-kannadaDisplay">
+    <button onclick="switchTab('home')" class="mobile-nav-btn text-heritage-gold p-1 flex flex-col items-center" data-target="home">
+      <i class="fa-solid fa-house text-sm"></i>
+      <span class="mt-0.5">ಮುಖಪುಟ</span>
+    </button>
+    <button onclick="switchTab('parampara')" class="mobile-nav-btn text-heritage-muted p-1 flex flex-col items-center" data-target="parampara">
+      <i class="fa-solid fa-person-praying text-sm"></i>
+      <span class="mt-0.5">ಗುರುಗಳು</span>
+    </button>
+    <button onclick="switchTab('branches')" class="mobile-nav-btn text-heritage-muted p-1 flex flex-col items-center" data-target="branches">
+      <i class="fa-solid fa-sitemap text-sm"></i>
+      <span class="mt-0.5">27 ಶಾಖೆಗಳು</span>
+    </button>
+    <button onclick="switchTab('education')" class="mobile-nav-btn text-heritage-muted p-1 flex flex-col items-center" data-target="education">
+      <i class="fa-solid fa-graduation-cap text-sm"></i>
+      <span class="mt-0.5">ಶಿಕ್ಷಣ</span>
+    </button>
+    <button onclick="switchTab('dasoha')" class="mobile-nav-btn text-heritage-muted p-1 flex flex-col items-center" data-target="dasoha">
+      <i class="fa-solid fa-bowl-rice text-sm"></i>
+      <span class="mt-0.5">ದಾಸೋಹ</span>
+    </button>
+    <button onclick="switchTab('visit')" class="mobile-nav-btn text-heritage-muted p-1 flex flex-col items-center" data-target="visit">
+      <i class="fa-solid fa-map-location-dot text-sm"></i>
+      <span class="mt-0.5">ಭೇಟಿ</span>
+    </button>
+  </aside>
+
+  <!-- Global Royal Footer -->
+  <footer class="bg-heritage-black border-t border-heritage-border text-heritage-paper font-kannadaBody pt-10 pb-16 xl:pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-heritage-border/60">
+        
+        <div class="md:col-span-6 space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/000000.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-heritage-gold object-cover" onerror="this.onerror=null; this.src='https://placehold.co/80x80/14110E/d4af37?text=Logo';">
+            <h3 class="text-lg font-bold font-kannadaDisplay text-heritage-gold">
+              ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸಂಸ್ಥಾನ ಮಠ — ಹಾಲಕೆರೆ
+            </h3>
+          </div>
+          <p class="text-xs text-heritage-muted font-sans leading-relaxed max-w-md">
+            The historic 500+ years spiritual seat of Virasaiva Sharana heritage, with 27 matha records from the book, the Naregal residential school for deaf and mute, and unceasing Trividha Dasoha.
+          </p>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-sans font-bold uppercase tracking-wider text-heritage-gold mb-2">QUICK SECTIONS</h4>
+          <ul class="text-xs text-heritage-muted space-y-1.5 font-sans">
+            <li><a href="javascript:void(0)" onclick="switchTab('history')" class="hover:text-amber-300">500+ Years History</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTab('parampara')" class="hover:text-amber-300">Guru Parampara</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTab('shivayog')" class="hover:text-amber-300">Shivayog Mandira</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTab('branches')" class="hover:text-amber-300">27 Matha Records Directory</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTab('education')" class="hover:text-amber-300">Education Institutions</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTab('archive')" class="hover:text-amber-300">1970 Photo Archive</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-sans font-bold uppercase tracking-wider text-heritage-gold mb-2">LOCATION & CONTACT</h4>
+          <p class="text-xs text-heritage-muted font-sans leading-relaxed">
+            Shri Annadaneshwar Mahasamsthana Matha,<br>
+            Halakere Post, Taluk: Gajendragad / Ron,<br>
+            District: Gadag, Karnataka - 582117, India.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-heritage-muted font-sans gap-2">
+        <div>
+          © <span id="yearSpan">2026</span> Shri Annadaneshwar Samsthana Matha Halakere. All Rights Reserved.
+        </div>
+        <div class="text-amber-400 font-bold">
+          “Kayakave Kailasa • Dasohave Mukti”
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+    // -------------------------------------------------------------
+    // Previous branch list retained below only as an unused reference.
+    // -------------------------------------------------------------
+    const LEGACY_BRANCHES = [
+      {
+        rank: 1,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮೂಲ ಮಹಾಸಂಸ್ಥಾನ ಮಠ, ಹಾಲಕೆರೆ (Headquarters)",
+        location: "ಹಾಲಕೆರೆ, ತಾ: ಗಜೇಂದ್ರಗಡ / ರೋಣ, ಜಿ: ಗದಗ",
+        region: "central",
+        status: "verified",
+        head: "ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು",
+        desc: "ಸಕಲ 28 ಶಾಖಾ ಮಠಗಳ ಮೂಲ ಮಾತೃ ಪೀಠ. 500+ ವರ್ಷಗಳ ಇತಿಹಾಸವಿರುವ ಕರ್ತೃ ಅನ್ನದಾನೇಶ್ವರರ ಪವಿತ್ರ ತಪೋಭೂಮಿ, ಮಹಾಗದ್ದುಗೆ ಹಾಗೂ ಅಖಂಡ ಅನ್ನದಾಸೋಹ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 2,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಬೇಲೂರು (Belur Matha)",
+        location: "ಬೇಲೂರು ಗ್ರಾಮ, ತಾ: ಬಾದಾಮಿ, ಜಿ: ಬಾಗಲಕೋಟೆ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನ ಪೀಠದ ನೇರ ಉಸ್ತುವಾರಿ",
+        desc: "ಬಾದಾಮಿ ಸೀಮೆಯ ಐತಿಹಾಸಿಕ ಬೇಲೂರು ಗ್ರಾಮದಲ್ಲಿರುವ ಪುರಾತನ ಶಾಖಾ ಮಠ. ಈ ಭಾಗದ ಭಕ್ತರಿಗೆ ಧಾರ್ಮಿಕ ಮತ್ತು ದಾಸೋಹ ಸಂಸ್ಕಾರ ನೀಡುತ್ತಿರುವ ಪವಿತ್ರ ನೆಲೆ."
+      },
+      {
+        rank: 3,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಬಾದಾಮಿ (Badami)",
+        location: "ಬಾದಾಮಿ ಚಾಲುಕ್ಯ ನಗರ, ಜಿ: ಬಾಗಲಕೋಟೆ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಸ್ಥಳೀಯ ಶಾಖಾ ಸ್ವಾಮಿಗಳು",
+        desc: "ಕಲ್ಯಾಣ ಚಾಲುಕ್ಯರ ಶಿಲ್ಪಕಲಾ ರಾಜಧಾನಿಯಾದ ಬಾದಾಮಿಯಲ್ಲಿರುವ ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಪ್ರಮುಖ ಶಾಖೆ. ಯಾತ್ರಾರ್ಥಿಗಳಿಗೆ ಪ್ರಸಾದ ಹಾಗೂ ಶರಣ ತತ್ವ ಬೋಧನೆ."
+      },
+      {
+        rank: 4,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಬಾಗಲಕೋಟೆ (Bagalkot)",
+        location: "ನವನಗರ / ಹಳೇ ಬಾಗಲಕೋಟೆ, ಜಿ: ಬಾಗಲಕೋಟೆ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಶಾಖಾ ಮಠಾಧೀಶರು",
+        desc: "ಘಟಪ್ರಭಾ ನದಿಯ ತೀರದ ಬಾಗಲಕೋಟೆ ಜಿಲ್ಲಾ ಕೇಂದ್ರದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಶಾಖೆ. ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಆಶ್ರಯ ಮತ್ತು ದಾಸೋಹ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 5,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ನರೇಗಲ್ಲ (Naregal)",
+        location: "ನರೇಗಲ್ಲ, ತಾ: ಗಜೇಂದ್ರಗಡ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶ್ರೀ ಸಂಸ್ಥಾನದ ಸಾರಥ್ಯ",
+        desc: "ಪ್ರಸಿದ್ಧ ಕಿವುಡ-ಮೂಕರ ಉಚಿತ ವಸತಿ ಶಾಲೆ ಹಾಗೂ ವಿಶಾಲ ಪ್ರಸಾದ ನಿಲಯ ಹೊಂದಿರುವ ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಅತ್ಯಂತ ಪ್ರಮುಖ ಸೇವಾ ಶಾಖೆ."
+      },
+      {
+        rank: 6,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಗಜೇಂದ್ರಗಡ",
+        location: "ಗಜೇಂದ್ರಗಡ ಪಟ್ಟಣ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಸ್ಥಳೀಯ ಪೂಜ್ಯರು",
+        desc: "ಐತಿಹಾಸಿಕ ಬೆಟ್ಟದ ನೇಕಾರರ ನಗರವಾದ ಗಜೇಂದ್ರಗಡದ ಹೃದಯಭಾಗದಲ್ಲಿರುವ ಶಾಖೆ. ಸದಾ ಶಿವಾನುಭವ ಗೋಷ್ಠಿ ಮತ್ತು ಪ್ರವಚನ ನಡೆಯುವ ತಾಣ."
+      },
+      {
+        rank: 7,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ರೋಣ (Ron)",
+        location: "ರೋಣ ತಾಲೂಕು ಕೇಂದ್ರ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶ್ರೀ ಸಂಸ್ಥಾನ ನೇರ ಆಡಳಿತ",
+        desc: "ತಾಲೂಕು ಕೇಂದ್ರದ ಗ್ರಾಮೀಣ ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳ ವಿದ್ಯಾಭ್ಯಾಸಕ್ಕಾಗಿ ಉಚಿತ ಹಾಸ್ಟೆಲ್ ಮತ್ತು ಅನ್ನದಾಸೋಹ ಒದಗಿಸುತ್ತಿರುವ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 8,
+        name: "ಶ್ರೀ ಹಂಪಿ ಹೇಮಕೂಟ ಶೂನ್ಯಸಿಂಹಾಸನ ಗಾಯತ್ರಿ ಪೀಠ",
+        location: "ಹಂಪಿ ಹೇಮಕೂಟ ಪರ್ವತ, ಜಿ: ವಿಜಯನಗರ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು",
+        desc: "ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಶ್ರೀಗಳು ಹಾಗೂ ಪ್ರಸ್ತುತ ಶ್ರೀಗಳು ಹೇಮಕೂಟ ಶೂನ್ಯಸಿಂಹಾಸನದ ದಿವ್ಯ ಪರಂಪರೆಯನ್ನು ಮುನ್ನಡೆಸುತ್ತಿರುವ ಮಹಾಪೀಠ."
+      },
+      {
+        rank: 9,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನ ಶಾಖೆ, ಹೊಸಪೇಟೆ",
+        location: "ಹೊಸಪೇಟೆ ನಗರ, ಜಿ: ವಿಜಯನಗರ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನ ಸಾರಥ್ಯ",
+        desc: "ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಹೆಬ್ಬಾಗಿಲಾದ ಹೊಸಪೇಟೆಯಲ್ಲಿ ಬೃಹತ್ ಸಭಾಭವನ ಮತ್ತು ನಿತ್ಯ ಅನ್ನಪ್ರಸಾದ ನೀಡುವ ಪ್ರಮುಖ ಶಾಖೆ."
+      },
+      {
+        rank: 10,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಅಬ್ಬಿಗೇರಿ (Abbigeri)",
+        location: "ಅಬ್ಬಿಗೇರಿ, ತಾ: ರೋಣ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶಾಖಾ ಮಠಾಧೀಶರು",
+        desc: "ಅಬ್ಬಿಗೇರಿ ಹಾಗೂ ಸುತ್ತಮುತ್ತಲ ರೈತ ಸಮುದಾಯಕ್ಕೆ ಆಧ್ಯಾತ್ಮಿಕ ಮತ್ತು ಕೃಷಿ ಸಂಸ್ಕೃತಿ ಮಾರ್ಗದರ್ಶನ ನೀಡುವ ಪುರಾತನ ಶಾಖೆ."
+      },
+      {
+        rank: 11,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಸೂಡಿ (Sudi)",
+        location: "ಸೂಡಿ, ಕಲ್ಯಾಣ ಚಾಲುಕ್ಯ ಐತಿಹಾಸಿಕ ಕ್ಷೇತ್ರ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶಾಖಾ ಉಸ್ತುವಾರಿ",
+        desc: "ಪ್ರಾಚೀನ ಚಾಲುಕ್ಯ ಶಿಲ್ಪಕಲೆಯ ಸೂಡಿಯಲ್ಲಿರುವ ಮಠ. ಪ್ರಾಚೀನ ಶಿವಲಿಂಗ ಸನ್ನಿಧಿ ಹಾಗೂ ಧರ್ಮ ಪ್ರಸಾರದ ತಾಣ."
+      },
+      {
+        rank: 12,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಇಟಗಿ (Itagi)",
+        location: "ಇಟಗಿ, ತಾ: ಯಲಬುರ್ಗಾ / ಗದಗ ಗಡಿ, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಪೂಜ್ಯರು",
+        desc: "ಭೀಮಾಂಬಿಕಾ ದೇವಸ್ಥಾನದ ಸಮೀಪವಿರುವ ಶಾಖೆ. ದಾಸೋಹ ಮತ್ತು ಶಿವಾನುಭವ ಚಿಂತನ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 13,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಬಳ್ಳಾರಿ (Ballari)",
+        location: "ಕೌಲ್‌‌ಬಜಾರ್, ಜಿ: ಬಳ್ಳಾರಿ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಸ್ವಾಮೀಜಿ",
+        desc: "ಬಳ್ಳಾರಿ ಮಹಾನಗರದ ಭಕ್ತವೃಂದಕ್ಕೆ ಶರಣ ತತ್ವ ಮತ್ತು ಇಷ್ಟಲಿಂಗ ಪೂಜಾ ಸಂಸ್ಕಾರವನ್ನು ತಲುಪಿಸುತ್ತಿರುವ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 14,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಇಳಕಲ್ ಚಿತ್ತರಗಿ ಸಂಪರ್ಕ",
+        location: "ಇಳಕಲ್, ಜಿ: ಬಾಗಲಕೋಟೆ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಗುರು ಸಮಾಗಮ ಕೇಂದ್ರ",
+        desc: "ಕರ್ತೃ ಅನ್ನದಾನೇಶ್ವರರು, ಮಹಾಂತ ಶ್ರೀಗಳು ಮತ್ತು ಕೊಟ್ಟೂರೇಶ್ವರರು ತಪಸ್ಸುಗೈದ ಐತಿಹಾಸಿಕ ನೆನಪಿನ ಪವಿತ್ರ ಸಂಪರ್ಕ."
+      },
+      {
+        rank: 15,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಕೌಜಲಗಿ (Koujalagi)",
+        location: "ಕೌಜಲಗಿ, ಜಿ: ಬೆಳಗಾವಿ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಸ್ಥಳೀಯ ಪೂಜ್ಯರು",
+        desc: "ಬೆಳಗಾವಿ ಜಿಲ್ಲೆಯ ಕೌಜಲಗಿಯಲ್ಲಿ ಹಾಲಕೆರೆ ಮಠದ ಭಕ್ತರ ಆಶ್ರಯದಲ್ಲಿ ಸ್ಥಾಪನೆಯಾದ ಪುರಾತನ ಶಾಖೆ."
+      },
+      {
+        rank: 16,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಮುಂಡರಗಿ",
+        location: "ಮುಂಡರಗಿ ತಾಲೂಕು, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶಾಖಾ ಉಸ್ತುವಾರಿ",
+        desc: "ಕಪ್ಪತ್ತಗುಡ್ಡದ ತಪ್ಪಲಿನ ಭಾಗದ ಜನರಿಗೆ ಪರಿಸರ ಸಂರಕ್ಷಣೆ ಮತ್ತು ಭಕ್ತಿ ಮಾರ್ಗ ಬೋಧಿಸುವ ಶಾಖೆ."
+      },
+      {
+        rank: 17,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಶಾಖಾ ಮಠ, ಕೊಪ್ಪಳ",
+        location: "ಕೊಪ್ಪಳ ನಗರ, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಮುಖಂಡರು",
+        desc: "ಕೊಪ್ಪಳ ಜಿಲ್ಲಾ ಕೇಂದ್ರದಲ್ಲಿ ವಿದ್ಯಾಭ್ಯಾಸ ಮಾಡುವ ಗ್ರಾಮೀಣ ಯುವಕರಿಗೆ ಆಶ್ರಯ ನೀಡುವ ಶಾಖಾ ಮಠ."
+      },
+      {
+        rank: 18,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಶಿರಹಟ್ಟಿ",
+        location: "ಶಿರಹಟ್ಟಿ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶ್ರೀಗಳ ಸಾರಥ್ಯ",
+        desc: "ಭಾವೈಕ್ಯತೆಯ ನೆಲೆಯಾದ ಶಿರಹಟ್ಟಿಯಲ್ಲಿ ಸಾಮರಸ್ಯ ಮತ್ತು ಶರಣ ತತ್ವ ಸಾರುವ ಶಾಖೆ."
+      },
+      {
+        rank: 19,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಕುಷ್ಟಗಿ",
+        location: "ಕುಷ್ಟಗಿ ಪಟ್ಟಣ, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಆಡಳಿತ",
+        desc: "ಕುಷ್ಟಗಿ ತಾಲೂಕಿನ ಭಕ್ತರ ಪ್ರಾರ್ಥನೆಯಂತೆ ನಿರ್ಮಾಣವಾದ ದಾಸೋಹ ಧಾಮ."
+      },
+      {
+        rank: 20,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಗಂಜಿಹಾಳ",
+        location: "ಗಂಜಿಹಾಳ, ತಾ: ರೋಣ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಮೂಲ ತಪೋಸ್ಥಳ",
+        desc: "ಕರ್ತೃ ಅನ್ನದಾನೇಶ್ವರ ಶ್ರೀಗಳು ಹಾಲಕೆರೆಗೆ ಆಗಮಿಸುವ ಮುನ್ನ ತಪಸ್ಸುಗೈದ ಪವಿತ್ರ ಗಂಜಿಹಾಳ ಗ್ರಾಮದ ಶಾಖೆ."
+      },
+      {
+        rank: 21,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಬೆಳವಣಿಕಿ",
+        location: "ಬೆಳವಣಿಕಿ, ತಾ: ರೋಣ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಸ್ಥಳೀಯ ಪೂಜ್ಯರು",
+        desc: "ಗ್ರಾಮೀಣ ಭಾಗದ ಶಿಕ್ಷಣ ಮತ್ತು ದಾಸೋಹಕ್ಕೆ ಸಾಕ್ಷಿಯಾಗಿರುವ ಶಾಖಾ ಮಠ."
+      },
+      {
+        rank: 22,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಗಂಗಾವತಿ",
+        location: "ಗಂಗಾವತಿ, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಮಠಾಧೀಶರು",
+        desc: "ತುಂಗಭದ್ರಾ ಅಚ್ಚುಕಟ್ಟು ಪ್ರದೇಶದ ಭತ್ತದ ಕಣಜ ಗಂಗಾವತಿಯಲ್ಲಿ ನಿತ್ಯ ದಾಸೋಹ ನಡೆಸುತ್ತಿರುವ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 23,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಯಲಬುರ್ಗಾ",
+        location: "ಯಲಬುರ್ಗಾ, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಸ್ಥಳೀಯ ಉಸ್ತುವಾರಿ",
+        desc: "ಯಲಬುರ್ಗಾ ಪಟ್ಟಣದ ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಆಸರೆಯಾಗಿರುವ ಹಾಲಕೆರೆ ಸಂಸ್ಥಾನದ ಶಾಖೆ."
+      },
+      {
+        rank: 24,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ನರಗುಂದ",
+        location: "ನರಗುಂದ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶಾಖಾ ಪೂಜ್ಯರು",
+        desc: "ಐತಿಹಾಸಿಕ ನರಗುಂದ ಬಂಡಾಯದ ನೆಲದಲ್ಲಿ ರೈತರಿಗೆ ಧೈರ್ಯ ಮತ್ತು ಸಂಸ್ಕಾರ ನೀಡುವ ಮಠ."
+      },
+      {
+        rank: 25,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಹುನಗುಂದ",
+        location: "ಹುನಗುಂದ, ಜಿ: ಬಾಗಲಕೋಟೆ",
+        region: "bagalkot_badami",
+        status: "verified",
+        head: "ಪರಿಶೀಲಿತ ಶಾಖೆ",
+        desc: "ಬಾಗಲಕೋಟೆ-ಹುನಗುಂದ ಸೀಮೆಯ ಭಕ್ತರ ಸಹಯೋಗದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಧರ್ಮ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 26,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಸಿರಗುಪ್ಪ",
+        location: "ಸಿರಗುಪ್ಪ, ಜಿ: ಬಳ್ಳಾರಿ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಕೇಂದ್ರ",
+        desc: "ಬಳ್ಳಾರಿ-ಆಂಧ್ರ ಗಡಿಭಾಗದ ಭಕ್ತರಿಗೆ ಶರಣ ಧರ್ಮ ತಲುಪಿಸುವ ಶಾಖಾ ಕೇಂದ್ರ."
+      },
+      {
+        rank: 27,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಮುಳಗುಂದ",
+        location: "ಮುಳಗುಂದ, ಜಿ: ಗದಗ",
+        region: "gadag",
+        status: "verified",
+        head: "ಶಾಖಾ ತಾಣ",
+        desc: "ಜೈನ-ಶೈವ ಐತಿಹಾಸಿಕ ತಾಣವಾದ ಮುಳಗುಂದದಲ್ಲಿರುವ ಹಾಲಕೆರೆ ಭಕ್ತರ ಶಾಖಾ ತಾಣ."
+      },
+      {
+        rank: 28,
+        name: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಠ, ಕುಕನೂರು",
+        location: "ಕುಕನೂರು, ಜಿ: ಕೊಪ್ಪಳ",
+        region: "koppal_vijayanagar",
+        status: "verified",
+        head: "ಶಾಖಾ ಸೇವಾ ಕೇಂದ್ರ",
+        desc: "ಪುರಾತನ ಕುಕನೂರು ಕ್ಷೇತ್ರದಲ್ಲಿ ಹಾಲಕೆರೆ ಭಕ್ತರು ನಿರ್ಮಿಸಿರುವ ಸೇವಾ ಶಾಖೆ."
+      }
+    ];
+
+    const ALL_BRANCHES = [
+      { rank: 1, name: "ಹಾಲಕೆರೆ", location: "ಹಾಲಕೆರೆ", head: "ಶ್ರೀ ಸಂಸ್ಥಾನ ಮಠ — ಕೇಂದ್ರ ಪೀಠ", desc: "ಕೇಂದ್ರ ಪೀಠ" },
+      { rank: 2, name: "ಬೇಲೂರು", location: "ಬೇಲೂರು", head: "ಅನ್ನದಾನೇಶ್ವರ ಸ್ವಾಮಿ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 3, name: "ಕೋಡಿಕೊಪ್ಪ", location: "ಕೋಡಿಕೊಪ್ಪ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 4, name: "ಇಟಗಿ", location: "ಇಟಗಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 5, name: "ತೋಟಗಂಟಿ", location: "ತೋಟಗಂಟಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 6, name: "ಜಕ್ಕಲಿ", location: "ಜಕ್ಕಲಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 7, name: "ಗಜೇಂದ್ರಗಡ", location: "ಗಜೇಂದ್ರಗಡ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 8, name: "ಗೋಗೇರಿ", location: "ಗೋಗೇರಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 9, name: "ಗುಳುಗಳಿ", location: "ಗುಳುಗಳಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 10, name: "ರಾಜೂರ", location: "ರಾಜೂರ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 11, name: "ಬಂಡಿ", location: "ಬಂಡಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 12, name: "ಸಂಗನಾಳ", location: "ಸಂಗನಾಳ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 13, name: "ಯಲಬುರ್ಗಾ", location: "ಯಲಬುರ್ಗಾ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 14, name: "ಕುಷ್ಟಗಿ", location: "ಕುಷ್ಟಗಿ", head: "ಶ್ರೀ ಅನ್ನದಾನಸ್ವಾಮಿ ವಿರಕ್ತಮಠ / ಸಂಸ್ಥಾನಮಠ", desc: "ವಿರಕ್ತಮಠ / ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 15, name: "ಹನುಮಸಾಗರ", location: "ಹನುಮಸಾಗರ", head: "ಅನ್ನದಾನಸ್ವಾಮಿ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 16, name: "ಬೀಳಗಿ", location: "ಬೀಳಗಿ", head: "ಅನ್ನದಾನಸ್ವಾಮಿ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 17, name: "ಗಂಜಿಹಾಳ", location: "ಗಂಜಿಹಾಳ", head: "ಮೂಲಮಠ ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಮೂಲಮಠ" },
+      { rank: 18, name: "ಹೊನ್ನಳ್ಳಿ", location: "ಹೊನ್ನಳ್ಳಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 19, name: "ನಾಗೂರ", location: "ನಾಗೂರ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 20, name: "ಕಂದಗಲ್", location: "ಕಂದಗಲ್", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 21, name: "ಹಿರೇಶಿವನಗುತ್ತಿ", location: "ಹಿರೇಶಿವನಗುತ್ತಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನಮಠ", desc: "ಸಂಸ್ಥಾನಮಠ" },
+      { rank: 22, name: "ಕನಸಾವಿ", location: "ಕನಸಾವಿ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 23, name: "ರಾಮತ್ನಾಳ", location: "ರಾಮತ್ನಾಳ", head: "ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 24, name: "ಶ್ರೀ ಶಿವಯೋಗಮಂದಿರ", location: "ಶ್ರೀ ಶಿವಯೋಗಮಂದಿರ", head: "ಅನ್ನದಾನೇಶ್ವರ ಸ್ವಾಮಿ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" },
+      { rank: 25, name: "ಗದಗ", location: "ಗದಗ", head: "ಆನಂದಾಶ್ರಮ - ಮುಸಾರಿ", desc: "ಆನಂದಾಶ್ರಮ - ಮುಸಾರಿ" },
+      { rank: 26, name: "ಗದಗ ಹಡಗಲಿಮಠ", location: "ಗದಗ ಹಡಗಲಿಮಠ", head: "ಶಹಾಪುರಪೇಟೆ", desc: "ಶಹಾಪುರಪೇಟೆ" },
+      { rank: 27, name: "ದಾವಣಗೇರಿ", location: "ದಾವಣಗೇರಿ", head: "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ವಿರಕ್ತಮಠ", desc: "ವಿರಕ್ತಮಠ" }
+    ];
+
+    const GURU_ROSTER = [
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರು", note: "ಸಂಸ್ಥಾಪಕ ಕರ್ತೃ ಗುರುಗಳು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಕರಿಸಿದ್ದ ಮಹಾಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಕಿರಿಯ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಹಿರಿಯ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರು", note: "ಗಡ್ಡದ ಅಜ್ಜನವರು", image: "assets/images/Annadana%20mahaswamigalu.jpeg", imagePosition: "center 35%", imageOffset: -12 },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಗುರು ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳವರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರು", note: "ಕಲ್ಲು ಮಠದ ಅಜ್ಜಾವ್ರು" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಗುರು ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳವರು", note: "ಕಟ್ಟಿಗೆ ಮಠದ ಅಜ್ಜಾವ್ರು", image: "assets/images/rathostav.jpg" },
+      { name: "ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಪ್ರಭುರಾಜೇಂದ್ರ ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳವರು", note: "ಅಮೀನಗಡದ ಪ್ರಭುಗಳು" },
+      { name: "ಶ್ರೀ ಹೇಮಕೂಟ ಸಿಂಹಾಸನಾಧೀಶ್ವರ ಶ್ರೀಮನ್ನಿರಂಜನ ಜಗದ್ಗುರು ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳು", note: "ಉರ್ಫ್ ಶ್ರೀ ಮ.ನಿ.ಪ್ರ. ಅನ್ನದಾನ ಮಹಾಸ್ವಾಮಿಗಳು — ಹಂಪಿ, ಹೊಸಪೇಟೆ, ಬಳ್ಳಾರಿ, ಹಾಲಕೆರೆ", image: "assets/images/2233.jpg" },
+      { name: "ಹಾಲಿ ಪೀಠಾಧಿಪತಿಗಳು: ಪರಮಪೂಜ್ಯ ಜಗದ್ಗುರು ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು", image: "assets/images/2222.jpg" }
+    ];
+
+    // -------------------------------------------------------------
+    // NAVIGATION & TAB SWITCHER
+    // -------------------------------------------------------------
+    function switchTab(viewId) {
+      document.querySelectorAll('.tab-view').forEach(v => v.classList.remove('active'));
+      const target = document.getElementById('view-' + viewId);
+      if (target) target.classList.add('active');
+
+      // Update Desktop Nav UI
+      document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+        if (btn.getAttribute('data-target') === viewId) {
+          btn.className = "nav-tab-btn px-3 py-2 rounded-lg text-heritage-gold border-b-2 border-heritage-gold font-kannadaDisplay font-bold";
+        } else {
+          btn.className = "nav-tab-btn px-3 py-2 rounded-lg text-heritage-paper/85 hover:text-heritage-gold font-kannadaDisplay font-semibold";
+        }
+      });
+
+      // Update Mobile Bottom Bar UI
+      document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
+        if (btn.getAttribute('data-target') === viewId) {
+          btn.classList.add('text-heritage-gold');
+          btn.classList.remove('text-heritage-muted');
+        } else {
+          btn.classList.remove('text-heritage-gold');
+          btn.classList.add('text-heritage-muted');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileNavDrawer() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    // -------------------------------------------------------------
+    // GURU ROSTER AND BOOK-RECORDED BRANCH DIRECTORY
+    // -------------------------------------------------------------
+    function renderGuruRoster() {
+      const roster = document.getElementById('guruRoster');
+      roster.innerHTML = GURU_ROSTER.map((guru, index) => {
+        const number = index + 1;
+        const images = guru.images || (guru.image ? [guru.image] : []);
+        const portraits = images.length
+          ? images.map(image => `
+              <img src="${image}" alt="${guru.name}" class="w-full h-full min-w-0 object-contain" style="object-position: ${guru.imagePosition || 'center'}; transform: translateY(${guru.imageOffset || 0}px)">
+            `).join('')
+          : `<div class="w-full h-full min-h-28 flex items-center justify-center text-heritage-gold text-4xl"><i class="fa-solid fa-place-of-worship"></i></div>`;
+        return `
+          <article class="bg-heritage-card border ${number === 13 ? 'border-2 border-heritage-gold shadow-lg shadow-heritage-gold/15' : 'border-heritage-border'} rounded-2xl p-4 sm:p-5 flex gap-4 items-center">
+            <div class="grid ${images.length > 1 ? 'grid-cols-2' : 'grid-cols-1'} shrink-0 ${images.length > 1 ? 'w-28 sm:w-32' : 'w-24 sm:w-28'} h-28 sm:h-32 overflow-hidden rounded-xl border border-heritage-border bg-heritage-black">
+              ${portraits}
+            </div>
+            <div class="min-w-0">
+              <span class="inline-flex mb-2 px-2.5 py-1 rounded-full ${number === 13 ? 'bg-emerald-950 text-emerald-300 border-emerald-700' : 'bg-heritage-elevated text-amber-300 border-heritage-border'} border text-xs font-sans font-bold">
+                ${number === 13 ? 'ಹಾಲಿ ಪೀಠಾಧಿಪತಿಗಳು' : `ಗುರುಗಳು ${number}`}
+              </span>
+              <h3 class="text-base sm:text-lg font-bold font-kannadaDisplay ${number === 13 ? 'text-heritage-gold' : 'text-heritage-paper'} leading-relaxed">${guru.name}</h3>
+              ${guru.note ? `<p class="text-xs sm:text-sm text-heritage-muted font-kannadaBody mt-1 leading-relaxed">${guru.note}</p>` : ''}
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderBranchCards(branches) {
+      const grid = document.getElementById('branchesGrid');
+      grid.innerHTML = '';
+
+      if (!branches || branches.length === 0) {
+        grid.innerHTML = `<div class="col-span-full py-8 text-center text-heritage-muted font-sans text-xs">No matching branch mathas found.</div>`;
+        return;
+      }
+
+      branches.forEach(b => {
+        const isHQ = b.rank === 1;
+        const card = document.createElement('div');
+        card.className = `heritage-card bg-heritage-card rounded-2xl p-5 flex flex-col justify-between cursor-pointer ${isHQ ? 'border-2 border-heritage-gold shadow-lg shadow-heritage-gold/25' : 'border border-heritage-border'}`;
+        card.onclick = () => openBranchModal(b);
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2 font-sans">
+              <span class="text-xs font-bold ${isHQ ? 'text-amber-300 bg-amber-950/90' : 'text-heritage-gold bg-heritage-elevated'} px-2.5 py-0.5 rounded border border-heritage-border">
+                #${b.rank} ${isHQ ? 'CENTRAL PEETHA' : 'BOOK RECORD'}
+              </span>
+              <span class="text-[10px] text-emerald-400 bg-emerald-950/70 border border-emerald-700/60 px-2 py-0.5 rounded-full font-bold">
+                ದಾಖಲಿತ ಮಠ
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold font-kannadaDisplay ${isHQ ? 'text-amber-300' : 'text-heritage-paper'} leading-snug mb-1">
+              ${b.name}
+            </h3>
+
+            <div class="text-xs text-heritage-muted flex items-center gap-1.5 mb-2 font-kannadaBody">
+              <i class="fa-solid fa-place-of-worship text-amber-400 text-[11px]"></i>
+              <span>${b.head}</span>
+            </div>
+
+            <p class="text-xs text-heritage-paper/80 font-kannadaBody leading-relaxed line-clamp-2 mb-3">
+              ${b.rank === 1 ? 'ಹಾಲಕೆರೆ ಕೇಂದ್ರ ಪೀಠ' : 'ಶಾಖಾ ಮಠ'}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-heritage-border flex items-center justify-between text-xs text-heritage-gold font-sans font-bold">
+            <span>View Full Matha Dossier</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    function filterBranches() {
+      const q = (document.getElementById('branchSearchInput').value || '').toLowerCase().trim();
+      const filtered = ALL_BRANCHES.filter(b => {
+        return b.name.toLowerCase().includes(q) || b.head.toLowerCase().includes(q);
+      });
+      renderBranchCards(filtered);
+    }
+
+    // -------------------------------------------------------------
+    // MODAL DIALOG INSPECTORS
+    // -------------------------------------------------------------
+    function openHeritageModal(title, subtitle, category, bodyHtml, splitView = null) {
+      const modal = document.getElementById('heritageModal');
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalSubhead').textContent = subtitle;
+      document.getElementById('modalCategoryBadge').textContent = category;
+      document.getElementById('modalBody').innerHTML = bodyHtml;
+
+      const split = document.getElementById('modalSplitViewer');
+      if (splitView) {
+        split.classList.remove('hidden');
+        document.getElementById('modalArtifactVisual').textContent = splitView.visual;
+        document.getElementById('modalArtifactText').innerHTML = splitView.text;
+      } else {
+        split.classList.add('hidden');
+      }
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeHeritageModal() {
+      document.getElementById('heritageModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openBranchModal(b) {
+      openHeritageModal(
+        b.name,
+        `ದಾಖಲೆ ಸಂಖ್ಯೆ: ${b.rank} / ${ALL_BRANCHES.length}`,
+        "BOOK-RECORDED MATHAS",
+        `
+          <p class="text-base font-kannadaBody">ಸ್ಥಳ: ${b.location}</p>
+          <div class="bg-heritage-elevated p-4 rounded-xl border border-heritage-border space-y-2 mt-3">
+            <strong class="text-xs text-amber-400 block font-sans">ಪುಸ್ತಕದಲ್ಲಿ ದಾಖಲಾದ ಮಠದ ಹೆಸರು:</strong>
+            <p class="text-sm text-heritage-paper">${b.head}</p>
+          </div>
+          <div class="text-xs text-heritage-muted p-3 bg-heritage-card border-l-2 border-heritage-gold mt-3 font-sans">
+            ದಾಖಲೆಗಳಲ್ಲಿ ನೀಡಿದ ಊರಿನ ಹೆಸರು ಮತ್ತು ಮಠದ ಹೆಸರನ್ನು ಮಾತ್ರ ಇಲ್ಲಿ ತೋರಿಸಲಾಗಿದೆ. ಜಿಲ್ಲೆ ಮತ್ತು ತಾಲ್ಲೂಕಿನ ವಿವರಗಳನ್ನು ಸೇರಿಸಿಲ್ಲ.
+          </div>
+        `
+      );
+    }
+
+    function openSannidhiDetail(key) {
+      if (key === 'kartru_gadduge') {
+        openHeritageModal(
+          "ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳ ಮಹಾಗದ್ದುಗೆ",
+          "ಹಾಲಕೆರೆ ಮೂಲ ಶಕ್ತಿಪೀಠ • 500+ Years Sacred Gadduge",
+          "SACRED SANNIDHI",
+          `
+            <p>ಹಾಲಕೆರೆ ಮಠದ ಗರ್ಭಗುಡಿಯಲ್ಲಿ ವಿರಾಜಮಾನವಾಗಿರುವ ಕರ್ತೃ ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆಯು ಭಕ್ತರ ಕಷ್ಟ ನಿವಾರಕ ತಾಣವಾಗಿದೆ. ಶ್ರೀಗಳು ಜೀವಂತ ಸಮಾಧಿ ಹೊಂದಿದ ಈ ಸ್ಥಳದಲ್ಲಿ ನಿತ್ಯ ನಸುಕಿನ ಜಾವ 05:30ಕ್ಕೆ ಪ್ರಾತಃಕಾಲದ ಮಹಾ ರುದ್ರಾಭಿಷೇಕ, ಬಿಲ್ವಾರ್ಚನೆ ಹಾಗೂ ಮಂಗಳಾರತಿ ಜರುಗುತ್ತದೆ.</p>
+            <div class="bg-heritage-elevated p-4 rounded-xl border border-heritage-border space-y-2 mt-3">
+              <strong class="text-amber-400 text-xs block font-sans">ಪವಾಡ ಪರಂಪರೆ:</strong>
+              <p class="text-xs text-heritage-paper/90">• <strong>ತೊಟ್ಟಿಲು ಸೇವೆ:</strong> ನಿಸ್ಸಂತಾನ ದಂಪತಿಗಳು ಈ ಗದ್ದುಗೆಗೆ ಪ್ರಾರ್ಥಿಸಿ ತೊಟ್ಟಿಲು ಕಟ್ಟಿದ ನಂತರ ಮಕ್ಕಳ ಫಲ ಪಡೆದಿದ್ದಾರೆ.</p>
+              <p class="text-xs text-heritage-paper/90">• <strong>ವಿಭೂತಿ ಪ್ರಸಾದ:</strong> ತೀವ್ರ ಶಾರೀರಿಕ ಮತ್ತು ಮಾನಸಿಕ ವ್ಯಾಧಿಗಳನ್ನು ಶಮನಗೊಳಿಸುವ ದಿವ್ಯ ವಿಭೂತಿ.</p>
+            </div>
+          `
+        );
+      } else if (key === 'annapurneshwari') {
+        openHeritageModal(
+          "ಅಖಂಡ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ಪ್ರಸಾದ ಭವನ",
+          "ಅಕ್ಷಯ ಪಾತ್ರೆ • ಎಂದೂ ಬರಿದಾಗದ ದಾಸೋಹ ಧಾಮ",
+          "DASOHA SANNIDHI",
+          `
+            <p>ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರರ ಹೆಸರೇ ಹೇಳುವಂತೆ ಇಲ್ಲಿ 'ಅನ್ನದಾನ'ವೇ ಮುಖ್ಯ ಧರ್ಮ. ಮಠದಲ್ಲಿ ಅಖಂಡ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿಯ ಸನ್ನಿಧಿ ಇದ್ದು, ಲಕ್ಷಾಂತರ ಜನ ಭಕ್ತರು ಬಂದರೂ ಪ್ರಸಾದ ಕೊರತೆಯಾಗದಂತೆ ಗುರುಗಳ ಆಶೀರ್ವಾದವಿದೆ.</p>
+          `
+        );
+      } else if (key === 'muppina_gadduge') {
+        openHeritageModal(
+          "ಶ್ರೀ ಮುಪ್ಪಿನ ಬಸವಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳ ಗದ್ದುಗೆ",
+          "ಆದಿ ತಪೋನಿಷ್ಠ ಗುರುಗಳ ಪವಿತ್ರ ಸನ್ನಿಧಿ",
+          "TAPASVI SANNIDHI",
+          `
+            <p>ಹಾಲಕೆರೆಯ ಹಿರಿಯ ತಪಸ್ವಿ ಗುರುಗಳ ಪಾವನ ಸನ್ನಿಧಿ. ಗಂಭೀರ ಸಾಧನೆ, ಧ್ಯಾನಾನುಷ್ಠಾನ ಹಾಗೂ ಮಾನಸಿಕ ಶಾಂತಿ ನೀಡುವ ದಿವ್ಯ ಕ್ಷೇತ್ರ.</p>
+          `
+        );
+      } else if (key === 'sanganabasava_samadhi') {
+        openHeritageModal(
+          "ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಮಹಾಸ್ವಾಮಿಗಳ ಪುಣ್ಯ ಸಮಾಧಿ",
+          "ತ್ರಿವಿಧ ದಾಸೋಹಿಗಳ ಸ್ಮೃತಿ ಮಂದಿರ (1987 — 2021)",
+          "SMARAKA SANNIDHI",
+          `
+            <p>2021 ರಲ್ಲಿ ಲಿಂಗೈಕ್ಯರಾದ ನಾಡಿನ ಹಿರಿಯ ಯತಿಗಳಾದ ಲಿಂ. ಡಾ. ಅಭಿನವ ಸಂಗನಬಸವ ಶ್ರೀಗಳ ಸಮಾಧಿ ಸನ್ನಿಧಿ. ಇದು ಸಾಮಾಜಿಕ ಸಮಾನತೆ, ರೈತಪರ ಕಾಳಜಿ ಮತ್ತು ಶಿಕ್ಷಣ ದಾಸೋಹದ ಚೈತನ್ಯ ಶಕ್ತಿಯಾಗಿದೆ.</p>
+          `
+        );
+      }
+    }
+
+    function openArchiveInspector(key) {
+      if (key === 'photo_siddaganga') {
+        openHeritageModal(
+          "ಸಿದ್ಧಗಂಗಾ ಶ್ರೀಗಳು & ಹಾಲಕೆರೆ ಅನ್ನದಾನೇಶ್ವರ ಶ್ರೀಗಳ ಐತಿಹಾಸಿಕ ಭೇಟಿ (1970)",
+          "Historic Samvada at Shri Math Halakere • 1970 Rare Record",
+          "ARCHIVE PHOTO 1970",
+          `
+            <p>ಈ ಅಪರೂಪದ ಕಪ್ಪು-ಬಿಳುಪಿನ ಛಾಯಾಚಿತ್ರವು 1970 ರ ಅವಧಿಯಲ್ಲಿ ತುಮಕೂರು ಸಿದ್ಧಗಂಗಾ ಮಠದ ಶತಾಯುಷಿ ತ್ರಿವಿಧ ದಾಸೋಹಿ ಡಾ. ಶ್ರೀ ಶ್ರೀ ಶಿವಕುಮಾರ ಮಹಾಸ್ವಾಮಿಗಳು ಹಾಲಕೆರೆ ಮಠಕ್ಕೆ ಆಗಮಿಸಿದ ಸಂದರ್ಭದಲ್ಲಿ ತೆಗೆಯಲಾದ ಐತಿಹಾಸಿಕ ದಾಖಲೆಯಾಗಿದೆ.</p>
+          `,
+          {
+            visual: "📷 [assets/images/hero.jpg: 1970 Rare Photograph — Siddaganga Swamiji with Halakere Swamiji standing together at the Matha entrance]",
+            text: "<strong>ದಾಖಲೆಯ ಮಹತ್ವ:</strong><br>ನಾಡಿನ ಇಬ್ಬರು ಮಹಾನ್ ದಾಸೋಹಿ ಗುರುಗಳ ಸಮಾಗಮ. ಉತ್ತರ ಕರ್ನಾಟಕ ಮತ್ತು ದಕ್ಷಿಣ ಕರ್ನಾಟಕದ ಶರಣ ತತ್ವ ಸಖ್ಯದ ದಿವ್ಯ ಸಾಕ್ಷ್ಯ."
+          }
+        );
+      } else if (key === 'gazetteer_1884') {
+        openHeritageModal(
+          "ಬ್ರಿಟಿಷ್ ಬಾಂಬೆ ಗೆಜೆಟಿಯರ್ ದಾಖಲೆ (1884)",
+          "Government of Bombay Gazetteers — Dharwar District Vol. XXII",
+          "BRITISH ARCHIVE",
+          `
+            <p>1884 ರ ಬ್ರಿಟಿಷ್ ಗೆಜೆಟ್‌ನಲ್ಲಿ ಹಾಲಕೆರೆ ಅನ್ನದಾನೇಶ್ವರ ಸಂಸ್ಥಾನ ಮಠ ಹಾಗೂ ವಾರ್ಷಿಕ ಜಾತ್ರೆಯ ಕುರಿತು ದಾಖಲಾದ ಅಧಿಕೃತ ಇತಿಹಾಸ.</p>
+          `,
+          {
+            visual: "🏛️ [Extract: Bombay Gazetteer 1884 - Halakere Monastery, Ron Taluka]",
+            text: "“Halakere contains a prominent monastery of Shri Annadaneshwar Swamiji known for unrestricted public feeding (Dasoha) to pilgrims of all castes. Over 40,000 pilgrims assemble for the annual car festival.”"
+          }
+        );
+      } else if (key === 'talegari_1') {
+        openHeritageModal(
+          "ಶ್ರೀ ಅನ್ನದಾನೇಶ್ವರ ಚರಿತ್ರೆ ಕಾವ್ಯ (ತಾಳೆಗರಿ ಹಸ್ತಪ್ರತಿ)",
+          "17th Century Palm Leaf Manuscript #HLK-01",
+          "MANUSCRIPT OCR",
+          `
+            <p>17ನೇ ಶತಮಾನದಲ್ಲಿ ಹಳೆಗನ್ನಡ ಲಿಪಿಯಲ್ಲಿ ಬರೆಯಲಾದ ಕರ್ತೃ ಶ್ರೀಗಳ ಆಗಮನ ಮತ್ತು ಪವಾಡಗಳ ಕಂದ ಪದ್ಯಗಳು.</p>
+          `,
+          {
+            visual: "📜 [Palm Leaf MS: Halegannada Verses on Annadaneshwar Swamiji]",
+            text: "<strong>ಕನ್ನಡ ಲಿಪ್ಯಂತರ:</strong><br>ಕಲ್ಯಾಣ ತತ್ವದ ಸಾರಮಂ ತಳೆದು ಚಿತ್ತರಗಿಯೊಳ್ ತಪಂಬೆತ್ತು । ಹಾಲಕೆರೆಯ ಪುಣ್ಯತಾಣಕೆ ಬಂದು ಭವಭಯಂಗಳಂ ನೀಗಿದ ಗುರುವೆ ಅನ್ನದಾನೇಶ ನಮೋ ॥"
+          }
+        );
+      }
+    }
+
+    function handleSevaSubmit(e) {
+      e.preventDefault();
+      const alertBox = document.getElementById('sevaAlert');
+      alertBox.classList.remove('hidden');
+      setTimeout(() => {
+        e.target.reset();
+        setTimeout(() => alertBox.classList.add('hidden'), 4000);
+      }, 500);
+    }
+
+    // -------------------------------------------------------------
+    // WEB AUDIO API TANPURA DRONE SYNTHESIZER
+    // -------------------------------------------------------------
+    let audioCtx = null;
+    let isDronePlaying = false;
+    let droneOsc1 = null;
+    let droneOsc2 = null;
+    let droneGain = null;
+
+    function toggleSpiritualDrone() {
+      const droneText = document.getElementById('droneText');
+      const droneIcon = document.getElementById('droneIcon');
+
+      if (!isDronePlaying) {
+        try {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (!audioCtx) audioCtx = new AudioContext();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+
+          // Fundamental C# / Sa (138.59 Hz) and Pa (207.65 Hz)
+          droneOsc1 = audioCtx.createOscillator();
+          droneOsc2 = audioCtx.createOscillator();
+          droneGain = audioCtx.createGain();
+
+          droneOsc1.type = 'sawtooth';
+          droneOsc1.frequency.setValueAtTime(138.59, audioCtx.currentTime);
+
+          droneOsc2.type = 'sine';
+          droneOsc2.frequency.setValueAtTime(207.65, audioCtx.currentTime);
+
+          droneGain.gain.setValueAtTime(0.01, audioCtx.currentTime);
+          droneGain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 2.5);
+
+          droneOsc1.connect(droneGain);
+          droneOsc2.connect(droneGain);
+          droneGain.connect(audioCtx.destination);
+
+          droneOsc1.start();
+          droneOsc2.start();
+
+          isDronePlaying = true;
+          droneText.textContent = "Om Chant: Active";
+          droneIcon.className = "fa-solid fa-volume-high text-xs text-amber-400 animate-pulse";
+        } catch (e) {
+          console.error("Audio synth error:", e);
+        }
+      } else {
+        if (droneGain) {
+          droneGain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
+          setTimeout(() => {
+            if (droneOsc1) droneOsc1.stop();
+            if (droneOsc2) droneOsc2.stop();
+            isDronePlaying = false;
+          }, 1200);
+        }
+        droneText.textContent = "Om Chant: Off";
+        droneIcon.className = "fa-solid fa-volume-xmark text-xs";
+      }
+    }
+
+    // Window Load Hook
+    window.addEventListener('DOMContentLoaded', () => {
+      renderGuruRoster();
+      renderBranchCards(ALL_BRANCHES);
+    });
+  </script>
+
+</body>
+</html>
